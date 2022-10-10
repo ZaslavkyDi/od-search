@@ -1,0 +1,4491 @@
+{
+  "query": {
+    "limit": 20,
+    "offset": 0,
+    "ownerId": 819
+  },
+  "pagination": {
+    "offset": 0,
+    "limit": 20,
+    "total": 20,
+    "links": {
+      "next": "/transactions?limit=20&offset=20&ownerId=819",
+      "prev": null
+    }
+  },
+  "data": [
+    {
+      "id": 104922259,
+      "from": {
+        "idType": "isaId",
+        "id": "AIIH"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "KCXL76",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "1215",
+                        "timeCode": "ET",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "485297",
+                        "standardCarrierAlphaCode": "AIIH"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Vestavia Hills",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "AL"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "01",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "44000",
+                    "ladingQuantity": "850",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1145 West 101st Street SSS DIST. CENTER"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "Lemont",
+                    "postalCode": "60439",
+                    "stateOrProvinceCode": "IL"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Indiana Sugars, Inc.",
+                    "entityIdentifierCode": "SH"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "2101 LITHONIA INDUSTRIAL BLVD"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "LITHONIA",
+                    "postalCode": "30058",
+                    "stateOrProvinceCode": "GA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "GRIFFITH LABS, USA, INC.",
+                    "entityIdentifierCode": "CN"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "018770001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "17",
+                "transactionSetControlNumber": "018770001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "2337278",
+                "referenceIdentificationQualifier": "PO"
+              },
+              {
+                "referenceIdentification": "KCXL76",
+                "referenceIdentificationQualifier": "BM"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "0392056",
+                "standardCarrierAlphaCode": "75951115-57c2-47c4-84ce-cc3e62b546f0",
+                "shipmentIdentificationNumber": "KCXL76"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1120",
+            "groupControlNumber": "1877",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "AIIH",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1120",
+            "interchangeSenderID": "AIIH           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000001877",
+            "componentElementSeparator": ":",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2896,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:26:17.569Z",
+      "latestRevisionAt": "2022-10-02T16:26:17.720Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104922259/attachments"
+      }
+    },
+    {
+      "id": 104922036,
+      "from": {
+        "idType": "isaId",
+        "id": "LGII"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "HNYZKD",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "0919",
+                        "timeCode": "PT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "11",
+                        "standardCarrierAlphaCode": "LGII"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Fresno",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "CA"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "39900",
+                    "ladingQuantity": "14",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "dateTime": [
+                  {
+                    "dateQualifier": "38",
+                    "timeQualifier": "LP"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "416 NE 145th Pl, Edmond, OK 73013, US"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "EDMOND",
+                    "postalCode": "73013",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "OK"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "identificationCode": "OLGA",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              },
+              {
+                "dateTime": [
+                  {
+                    "dateQualifier": "54",
+                    "timeQualifier": "LD"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "1320 W. Weber Avenue, Stockton, CA 95203"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "STOCKTON",
+                    "postalCode": "95203",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Sierra Pacific",
+                    "identificationCode": "5786382f-a839-4741-98b1-7dec495a54c9",
+                    "entityIdentifierCode": "CN",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "251160001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "17",
+                "transactionSetControlNumber": "251160001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "01",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "0103093",
+                "standardCarrierAlphaCode": "a11c7794-1f17-415a-ac14-af9a9969f729",
+                "shipmentIdentificationNumber": "HNYZKD"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1123",
+            "groupControlNumber": "25116",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "LGII",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1123",
+            "interchangeSenderID": "LGII           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000025116",
+            "componentElementSeparator": ":",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2976,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:23:21.229Z",
+      "latestRevisionAt": "2022-10-02T16:23:21.440Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104922036/attachments"
+      }
+    },
+    {
+      "id": 104921873,
+      "from": {
+        "idType": "isaId",
+        "id": "ECHS"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "TQB7CP",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "1114",
+                        "timeCode": "CT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "6768",
+                        "equipmentDescriptionCode": "TV",
+                        "standardCarrierAlphaCode": "ECHS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Texarkana",
+                        "stateOrProvinceCode": "TX"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "44500.00",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "B"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "911 VIRGINIA STREET IS, GARY,"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "GARY",
+                    "postalCode": "46401",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "IN"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Indiana Sugars, Inc.",
+                    "entityIdentifierCode": "SH"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1500 N CENTRAL AVE"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "HUMBOLDT",
+                    "postalCode": "38343",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "TN"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "CONAGRA BRANDS",
+                    "entityIdentifierCode": "CN"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "137037",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "18",
+                "transactionSetControlNumber": "137037"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "4010461",
+                "referenceIdentificationQualifier": "PO"
+              },
+              {
+                "referenceIdentification": "TQB7CP",
+                "referenceIdentificationQualifier": "BM"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "51276385",
+                "standardCarrierAlphaCode": "d4f8de21-7057-4175-b344-2c21f2ef669d",
+                "shipmentIdentificationNumber": "TQB7CP"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1120",
+            "groupControlNumber": "137037",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "ECHS",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1120",
+            "interchangeSenderID": "ECHS           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000137037",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2788,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.2",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.3",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:20:33.013Z",
+      "latestRevisionAt": "2022-10-02T16:20:33.145Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104921873/attachments"
+      }
+    },
+    {
+      "id": 104921436,
+      "from": {
+        "idType": "isaId",
+        "id": "LGII"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "EJ63LZ",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "0914",
+                        "timeCode": "PT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "11",
+                        "standardCarrierAlphaCode": "LGII"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Clovis",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "CA"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "39900",
+                    "ladingQuantity": "14",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "dateTime": [
+                  {
+                    "dateQualifier": "38",
+                    "timeQualifier": "LP"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "416 NE 145th Pl, Edmond, OK 73013, US"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "EDMOND",
+                    "postalCode": "73013",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "OK"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "identificationCode": "OLGA",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              },
+              {
+                "dateTime": [
+                  {
+                    "dateQualifier": "54",
+                    "timeQualifier": "LD"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "1320 W. Weber Avenue, Stockton, CA 95203"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "STOCKTON",
+                    "postalCode": "95203",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Sierra Pacific",
+                    "identificationCode": "34133bdf-6e1d-400d-b624-54d15ef473b0",
+                    "entityIdentifierCode": "CN",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "251150001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "17",
+                "transactionSetControlNumber": "251150001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "01",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "0103092",
+                "standardCarrierAlphaCode": "a11c7794-1f17-415a-ac14-af9a9969f729",
+                "shipmentIdentificationNumber": "EJ63LZ"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1117",
+            "groupControlNumber": "25115",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "LGII",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1117",
+            "interchangeSenderID": "LGII           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000025115",
+            "componentElementSeparator": ":",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2976,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:17:56.227Z",
+      "latestRevisionAt": "2022-10-02T16:17:56.452Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104921436/attachments"
+      }
+    },
+    {
+      "id": 104921129,
+      "from": {
+        "idType": "isaId",
+        "id": "ECHS"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "TQB7CP",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "1107",
+                        "timeCode": "CT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "6768",
+                        "equipmentDescriptionCode": "TV",
+                        "standardCarrierAlphaCode": "ECHS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Texarkana",
+                        "stateOrProvinceCode": "AR"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "44500.00",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "B"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "911 VIRGINIA STREET IS, GARY,"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "GARY",
+                    "postalCode": "46401",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "IN"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Indiana Sugars, Inc.",
+                    "entityIdentifierCode": "SH"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1500 N CENTRAL AVE"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "HUMBOLDT",
+                    "postalCode": "38343",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "TN"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "CONAGRA BRANDS",
+                    "entityIdentifierCode": "CN"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "137035",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "18",
+                "transactionSetControlNumber": "137035"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "4010461",
+                "referenceIdentificationQualifier": "PO"
+              },
+              {
+                "referenceIdentification": "TQB7CP",
+                "referenceIdentificationQualifier": "BM"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "51276385",
+                "standardCarrierAlphaCode": "d4f8de21-7057-4175-b344-2c21f2ef669d",
+                "shipmentIdentificationNumber": "TQB7CP"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1115",
+            "groupControlNumber": "137035",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "ECHS",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1115",
+            "interchangeSenderID": "ECHS           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000137035",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2788,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.2",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.3",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:15:41.981Z",
+      "latestRevisionAt": "2022-10-02T16:15:42.099Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104921129/attachments"
+      }
+    },
+    {
+      "id": 104920864,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "124215133"
+      },
+      "stream": "live",
+      "businessNumber": "150127114",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "093000",
+                        "timeCode": "MT",
+                        "shipmentStatusIndicatorCode": "X3",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "AURORA",
+                        "postalCode": "80011",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "CO",
+                        "latitudeDecimalFormat": "39.7632341",
+                        "longitudeDecimalFormat": "-104.7457134"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "1",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "One Chase Manhattan Plaza"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "New York",
+                    "postalCode": "10005",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "NY"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "HelloFresh",
+                    "identificationCode": "07-940-8264",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "20761 EAST 35TH DR"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "AURORA",
+                    "postalCode": "80011",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "GREENCHEF CO DC",
+                    "identificationCode": "CODC",
+                    "entityIdentifierCode": "SF",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "14",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "150127114",
+                "referenceIdentificationQualifier": "OQ"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "BVN5X5",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "150127114"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "0914",
+            "groupControlNumber": "480529",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "124215133",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0914",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "124215133      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000480529",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2806,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks.0",
+          "type": "REMOVE",
+          "value": "{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks",
+          "type": "REMOVE",
+          "value": "[{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}]"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.0",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.1",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.2",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.3",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.5",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:14:11.680Z",
+      "latestRevisionAt": "2022-10-02T16:14:11.704Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104920864/attachments"
+      }
+    },
+    {
+      "id": 104920038,
+      "from": {
+        "idType": "isaId",
+        "id": "ZIPL"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "U9SUND",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "1211",
+                        "timeCode": "ET",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Claiborne",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "LA"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "21000",
+                    "ladingQuantity": "30",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "7375 Graham RD"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "FAIRBURN",
+                    "postalCode": "30213",
+                    "countryCode": "USA",
+                    "stateOrProvinceCode": "GA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "HUB_ATL c/o Deliverr",
+                    "identificationCode": "62b908c6-0699-4626-ae00-8e44764f85cb",
+                    "entityIdentifierCode": "CN",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "034340001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "13",
+                "transactionSetControlNumber": "034340001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "SW2558238",
+                "referenceIdentificationQualifier": "PO"
+              },
+              {
+                "referenceIdentification": "972",
+                "referenceIdentificationQualifier": "AO"
+              },
+              {
+                "referenceIdentification": "1",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "0455127",
+                "standardCarrierAlphaCode": "d262f035-d15d-4018-90ca-7cab3ebdb387",
+                "shipmentIdentificationNumber": "U9SUND"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1211",
+            "groupControlNumber": "3434",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "ZIPL",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1211",
+            "interchangeSenderID": "ZIPL           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000003434",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00400",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2564,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:11:55.225Z",
+      "latestRevisionAt": "2022-10-02T16:11:57.508Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104920038/attachments"
+      }
+    },
+    {
+      "id": 104920029,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "124215133"
+      },
+      "stream": "live",
+      "businessNumber": "150127122",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "101154",
+                        "timeCode": "MT",
+                        "shipmentStatusIndicatorCode": "CD",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "latitudeDecimalFormat": "33.94908905029297",
+                        "longitudeDecimalFormat": "-118.06752014160156"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "12300 BELL RANCH DRIVE"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "SANTA FE SPRINGS",
+                    "postalCode": "90670",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "GLS-SAFCA",
+                    "identificationCode": "GLS-SAFCA",
+                    "entityIdentifierCode": "ST",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "One Chase Manhattan Plaza"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "New York",
+                    "postalCode": "10005",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "NY"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "HelloFresh",
+                    "identificationCode": "07-940-8264",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "13",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "150127122",
+                "referenceIdentificationQualifier": "OQ"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "B6RBUY",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "150127122"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "0911",
+            "groupControlNumber": "480528",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "124215133",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0911",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "124215133      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000480528",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2618,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks.0",
+          "type": "REMOVE",
+          "value": "{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks",
+          "type": "REMOVE",
+          "value": "[{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}]"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.0",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.1",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.2",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.3",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:11:55.108Z",
+      "latestRevisionAt": "2022-10-02T16:11:56.825Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104920029/attachments"
+      }
+    },
+    {
+      "id": 104919971,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "124215133"
+      },
+      "stream": "live",
+      "businessNumber": "150127122",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "071100",
+                        "timeCode": "PT",
+                        "shipmentStatusIndicatorCode": "X1",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "latitudeDecimalFormat": "33.94908905029297",
+                        "longitudeDecimalFormat": "-118.06752014160156"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "2",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "12300 BELL RANCH DRIVE"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "SANTA FE SPRINGS",
+                    "postalCode": "90670",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "GLS-SAFCA",
+                    "identificationCode": "GLS-SAFCA",
+                    "entityIdentifierCode": "ST",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "One Chase Manhattan Plaza"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "New York",
+                    "postalCode": "10005",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "NY"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "HelloFresh",
+                    "identificationCode": "07-940-8264",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "14",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "150127122",
+                "referenceIdentificationQualifier": "OQ"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "B6RBUY",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "150127122"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "0911",
+            "groupControlNumber": "480527",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "124215133",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0911",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "124215133      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000480527",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2738,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks.0",
+          "type": "REMOVE",
+          "value": "{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks",
+          "type": "REMOVE",
+          "value": "[{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}]"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.0",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.1",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.2",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.3",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.5",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:11:53.537Z",
+      "latestRevisionAt": "2022-10-02T16:11:54.736Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104919971/attachments"
+      }
+    },
+    {
+      "id": 104919956,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "124215133"
+      },
+      "stream": "live",
+      "businessNumber": "150127122",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "071100",
+                        "timeCode": "PT",
+                        "shipmentStatusIndicatorCode": "X1",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "latitudeDecimalFormat": "33.94908905029297",
+                        "longitudeDecimalFormat": "-118.06752014160156"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "2",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "12300 BELL RANCH DRIVE"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "SANTA FE SPRINGS",
+                    "postalCode": "90670",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "GLS-SAFCA",
+                    "identificationCode": "GLS-SAFCA",
+                    "entityIdentifierCode": "ST",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "One Chase Manhattan Plaza"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "New York",
+                    "postalCode": "10005",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "NY"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "HelloFresh",
+                    "identificationCode": "07-940-8264",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "14",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "150127122",
+                "referenceIdentificationQualifier": "OQ"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "B6RBUY",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "150127122"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "0911",
+            "groupControlNumber": "480526",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "124215133",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0911",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "124215133      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000480526",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2738,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks.0",
+          "type": "REMOVE",
+          "value": "{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.LX_loop.0.remarks",
+          "type": "REMOVE",
+          "value": "[{\"freeFormInformation\":\"\",\"freeFormInformation1\":\"\"}]"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.0",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.1",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.2",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.3",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.businessInstructionsAndReferenceNumber.5",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:11:53.115Z",
+      "latestRevisionAt": "2022-10-02T16:11:54.065Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104919956/attachments"
+      }
+    },
+    {
+      "id": 104919413,
+      "from": {
+        "idType": "isaId",
+        "id": "LGII"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "HNYZKD",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "0904",
+                        "timeCode": "PT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "11",
+                        "standardCarrierAlphaCode": "LGII"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Fresno",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "CA"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "39900",
+                    "ladingQuantity": "14",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "dateTime": [
+                  {
+                    "dateQualifier": "38",
+                    "timeQualifier": "LP"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "416 NE 145th Pl, Edmond, OK 73013, US"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "EDMOND",
+                    "postalCode": "73013",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "OK"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "identificationCode": "OLGA",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              },
+              {
+                "dateTime": [
+                  {
+                    "dateQualifier": "54",
+                    "timeQualifier": "LD"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "1320 W. Weber Avenue, Stockton, CA 95203"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "STOCKTON",
+                    "postalCode": "95203",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Sierra Pacific",
+                    "identificationCode": "5786382f-a839-4741-98b1-7dec495a54c9",
+                    "entityIdentifierCode": "CN",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "251140001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "17",
+                "transactionSetControlNumber": "251140001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "01",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "0103093",
+                "standardCarrierAlphaCode": "a11c7794-1f17-415a-ac14-af9a9969f729",
+                "shipmentIdentificationNumber": "HNYZKD"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1106",
+            "groupControlNumber": "25114",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "LGII",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1106",
+            "interchangeSenderID": "LGII           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000025114",
+            "componentElementSeparator": ":",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2976,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:07:06.271Z",
+      "latestRevisionAt": "2022-10-02T16:07:06.494Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104919413/attachments"
+      }
+    },
+    {
+      "id": 104919409,
+      "from": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "28181472",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "remarks": [
+                  {
+                    "freeFormInformation": "Memo ABI Managed   Anheuser-Bu",
+                    "freeFormInformation1": "sch managed delivery appointme"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "extendedReferenceInformation": [
+                  {
+                    "referenceIdentification": "02",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "814 S 2nd ST"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "N7_loop": [
+              {
+                "equipmentDetails": [
+                  {
+                    "equipmentNumber": "unknown",
+                    "equipmentDescriptionCode": "TL"
+                  }
+                ]
+              }
+            ],
+            "S5_loop": [
+              {
+                "N1_loop": [
+                  {
+                    "contact": [
+                      {
+                        "name": "BRWY-- St. Louis",
+                        "communicationNumber": "314-577-0577",
+                        "contactFunctionCode": "AA",
+                        "communicationNumberQualifier": "TE"
+                      }
+                    ],
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2814 S SECOND ST"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "ST LOUIS",
+                        "postalCode": "63118",
+                        "stateOrProvinceCode": "MO"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "BRWY-- St. Louis",
+                        "identificationCode": "STL",
+                        "entityIdentifierCode": "SF",
+                        "identificationCodeQualifier": "92"
+                      }
+                    ]
+                  }
+                ],
+                "dateTime": [
+                  {
+                    "date": "20221006",
+                    "time": "2300",
+                    "timeCode": "LT",
+                    "dateQualifier": "69",
+                    "timeQualifier": "U"
+                  }
+                ],
+                "ladingDetail": [
+                  {
+                    "unitWeight": "42923",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "productServiceID": "28181472",
+                    "packagingFormCode": "PLT",
+                    "productServiceIDQualifier": "ON"
+                  },
+                  {
+                    "ladingQuantity": "1",
+                    "productServiceID": "28181472",
+                    "packagingFormCode": "PLT",
+                    "productServiceID2": "BEER",
+                    "productServiceIDQualifier": "ON",
+                    "productServiceIDQualifier2": "TP"
+                  }
+                ],
+                "stopOffDetails": [
+                  {
+                    "stopReasonCode": "LD",
+                    "stopSequenceNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "01",
+                    "referenceIdentificationQualifier": "QN"
+                  },
+                  {
+                    "referenceIdentification": "28181472",
+                    "referenceIdentificationQualifier": "CO"
+                  }
+                ]
+              },
+              {
+                "N1_loop": [
+                  {
+                    "contact": [
+                      {
+                        "name": "WSLR-- Tristar Beverage Llc",
+                        "communicationNumber": "931-552-3300",
+                        "contactFunctionCode": "AA",
+                        "communicationNumberQualifier": "TE"
+                      }
+                    ],
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2059 WILMA RUDOLPH BLVD"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "CLARKSVILLE",
+                        "postalCode": "37040",
+                        "stateOrProvinceCode": "TN"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "WSLR-- Tristar Beverage Llc",
+                        "identificationCode": "04109",
+                        "entityIdentifierCode": "ST",
+                        "identificationCodeQualifier": "92"
+                      }
+                    ]
+                  }
+                ],
+                "dateTime": [
+                  {
+                    "date": "20221007",
+                    "time": "0500",
+                    "timeCode": "LT",
+                    "dateQualifier": "68",
+                    "timeQualifier": "Z"
+                  }
+                ],
+                "ladingDetail": [
+                  {
+                    "unitWeight": "42923",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "productServiceID": "28181472",
+                    "packagingFormCode": "PLT",
+                    "productServiceIDQualifier": "ON"
+                  },
+                  {
+                    "ladingQuantity": "1",
+                    "productServiceID": "28181472",
+                    "packagingFormCode": "PLT",
+                    "productServiceID2": "BEER",
+                    "productServiceIDQualifier": "ON",
+                    "productServiceIDQualifier2": "TP"
+                  }
+                ],
+                "stopOffDetails": [
+                  {
+                    "stopReasonCode": "UL",
+                    "stopSequenceNumber": "2"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "02",
+                    "referenceIdentificationQualifier": "QN"
+                  },
+                  {
+                    "referenceIdentification": "28181472",
+                    "referenceIdentificationQualifier": "CO"
+                  }
+                ]
+              }
+            ],
+            "setPurpose": [
+              {
+                "applicationTypeCode": "LT",
+                "transactionSetPurposeCode": "00"
+              }
+            ],
+            "routeInformation": [
+              {
+                "routingSequenceCode": "B",
+                "standardCarrierAlphaCode": "OLGA",
+                "transportationMethodTypeCode": "J"
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "021107280",
+                "transactionSetIdentifierCode": "204"
+              }
+            ],
+            "totalWeightAndCharges": [
+              {
+                "weight": "42923",
+                "ladingQuantity": "2022",
+                "weightUnitCode": "L",
+                "weightQualifier": "E"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "34",
+                "transactionSetControlNumber": "021107280"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028181472",
+                "referenceIdentificationQualifier": "SI"
+              }
+            ],
+            "beginningSegmentForShipmentInformationTransaction": [
+              {
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentMethodOfPaymentCode": "DF",
+                "shipmentIdentificationNumber": "28181472"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "1107",
+            "groupControlNumber": "3455",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "098630254",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "SM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1107",
+            "interchangeSenderID": "098630254      ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "01",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000003394",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 5126,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.dateTime.0",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.1",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.2",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.3",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime",
+          "type": "REMOVE",
+          "value": "[{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}]"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:07:01.216Z",
+      "latestRevisionAt": "2022-10-02T16:07:01.355Z",
+      "type": {
+        "name": "204_MOTOR_CARRIER_LOAD_TENDER"
+      },
+      "links": {
+        "attachments": "/transactions/104919409/attachments"
+      }
+    },
+    {
+      "id": 104919408,
+      "from": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "28181473",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "remarks": [
+                  {
+                    "freeFormInformation": "Memo ABI Managed   Anheuser-Bu",
+                    "freeFormInformation1": "sch managed delivery appointme"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "extendedReferenceInformation": [
+                  {
+                    "referenceIdentification": "02",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "814 S 2nd ST"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "N7_loop": [
+              {
+                "equipmentDetails": [
+                  {
+                    "equipmentNumber": "unknown",
+                    "equipmentDescriptionCode": "TL"
+                  }
+                ]
+              }
+            ],
+            "S5_loop": [
+              {
+                "N1_loop": [
+                  {
+                    "contact": [
+                      {
+                        "name": "BRWY-- St. Louis",
+                        "communicationNumber": "314-577-0577",
+                        "contactFunctionCode": "AA",
+                        "communicationNumberQualifier": "TE"
+                      }
+                    ],
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2814 S SECOND ST"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "ST LOUIS",
+                        "postalCode": "63118",
+                        "stateOrProvinceCode": "MO"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "BRWY-- St. Louis",
+                        "identificationCode": "STL",
+                        "entityIdentifierCode": "SF",
+                        "identificationCodeQualifier": "92"
+                      }
+                    ]
+                  }
+                ],
+                "dateTime": [
+                  {
+                    "date": "20221006",
+                    "time": "2300",
+                    "timeCode": "LT",
+                    "dateQualifier": "69",
+                    "timeQualifier": "U"
+                  }
+                ],
+                "ladingDetail": [
+                  {
+                    "unitWeight": "42863",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "productServiceID": "28181473",
+                    "packagingFormCode": "PLT",
+                    "productServiceIDQualifier": "ON"
+                  },
+                  {
+                    "ladingQuantity": "1",
+                    "productServiceID": "28181473",
+                    "packagingFormCode": "PLT",
+                    "productServiceID2": "BEER",
+                    "productServiceIDQualifier": "ON",
+                    "productServiceIDQualifier2": "TP"
+                  }
+                ],
+                "stopOffDetails": [
+                  {
+                    "stopReasonCode": "LD",
+                    "stopSequenceNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "01",
+                    "referenceIdentificationQualifier": "QN"
+                  },
+                  {
+                    "referenceIdentification": "28181473",
+                    "referenceIdentificationQualifier": "CO"
+                  }
+                ]
+              },
+              {
+                "N1_loop": [
+                  {
+                    "contact": [
+                      {
+                        "name": "WSLR-- Tristar Beverage Llc",
+                        "communicationNumber": "931-552-3300",
+                        "contactFunctionCode": "AA",
+                        "communicationNumberQualifier": "TE"
+                      }
+                    ],
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2059 WILMA RUDOLPH BLVD"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "CLARKSVILLE",
+                        "postalCode": "37040",
+                        "stateOrProvinceCode": "TN"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "WSLR-- Tristar Beverage Llc",
+                        "identificationCode": "04109",
+                        "entityIdentifierCode": "ST",
+                        "identificationCodeQualifier": "92"
+                      }
+                    ]
+                  }
+                ],
+                "dateTime": [
+                  {
+                    "date": "20221007",
+                    "time": "0400",
+                    "timeCode": "LT",
+                    "dateQualifier": "68",
+                    "timeQualifier": "Z"
+                  }
+                ],
+                "ladingDetail": [
+                  {
+                    "unitWeight": "42863",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "productServiceID": "28181473",
+                    "packagingFormCode": "PLT",
+                    "productServiceIDQualifier": "ON"
+                  },
+                  {
+                    "ladingQuantity": "1",
+                    "productServiceID": "28181473",
+                    "packagingFormCode": "PLT",
+                    "productServiceID2": "BEER",
+                    "productServiceIDQualifier": "ON",
+                    "productServiceIDQualifier2": "TP"
+                  }
+                ],
+                "stopOffDetails": [
+                  {
+                    "stopReasonCode": "UL",
+                    "stopSequenceNumber": "2"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "02",
+                    "referenceIdentificationQualifier": "QN"
+                  },
+                  {
+                    "referenceIdentification": "28181473",
+                    "referenceIdentificationQualifier": "CO"
+                  }
+                ]
+              }
+            ],
+            "setPurpose": [
+              {
+                "applicationTypeCode": "LT",
+                "transactionSetPurposeCode": "00"
+              }
+            ],
+            "routeInformation": [
+              {
+                "routingSequenceCode": "B",
+                "standardCarrierAlphaCode": "OLGA",
+                "transportationMethodTypeCode": "J"
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "021106249",
+                "transactionSetIdentifierCode": "204"
+              }
+            ],
+            "totalWeightAndCharges": [
+              {
+                "weight": "42863",
+                "ladingQuantity": "1948",
+                "weightUnitCode": "L",
+                "weightQualifier": "E"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "34",
+                "transactionSetControlNumber": "021106249"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028181473",
+                "referenceIdentificationQualifier": "SI"
+              }
+            ],
+            "beginningSegmentForShipmentInformationTransaction": [
+              {
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentMethodOfPaymentCode": "DF",
+                "shipmentIdentificationNumber": "28181473"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "1106",
+            "groupControlNumber": "3454",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "098630254",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "SM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1106",
+            "interchangeSenderID": "098630254      ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "01",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000003393",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 5126,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.dateTime.0",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.1",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.2",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.3",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime",
+          "type": "REMOVE",
+          "value": "[{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}]"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:07:00.726Z",
+      "latestRevisionAt": "2022-10-02T16:07:00.856Z",
+      "type": {
+        "name": "204_MOTOR_CARRIER_LOAD_TENDER"
+      },
+      "links": {
+        "attachments": "/transactions/104919408/attachments"
+      }
+    },
+    {
+      "id": 104919348,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "stream": "live",
+      "businessNumber": "28167930",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "PENDING",
+      "validationStatus": "INVALID",
+      "acknowledgmentStatus": "NOT_ACKNOWLEDGED",
+      "status": "PENDING",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "120543",
+                        "timeCode": "ET",
+                        "shipmentStatusIndicatorCode": "AJ",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "NEWARK",
+                        "postalCode": "07114",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "NJ",
+                        "latitudeDecimalFormat": "40.6940016",
+                        "longitudeDecimalFormat": "-74.1918846"
+                      }
+                    ]
+                  }
+                ],
+                "statusDetails": [
+                  {
+                    "date": "221002",
+                    "time": "0905",
+                    "cityName": "NEWARK",
+                    "timeCode": "LT",
+                    "equipmentInitial": "TRUF",
+                    "stateOrProvinceCode": "21",
+                    "referenceIdentification": "28167930",
+                    "referenceIdentificationQualifier": "IA"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "specialHandlingInstructions": [
+                  {
+                    "specialHandlingCode": "MR"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1 Busch Pl"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser-Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "3100 E CARSON ST"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "PITTSBURGH",
+                    "postalCode": "15203",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "PA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "WSLR-- Fuhrer Eagle Sales And Servi",
+                    "identificationCode": "33768",
+                    "entityIdentifierCode": "ST",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "18",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028167930",
+                "referenceIdentificationQualifier": "CN"
+              },
+              {
+                "referenceIdentification": "28167930",
+                "referenceIdentificationQualifier": "CO"
+              },
+              {
+                "referenceIdentification": "SW2559074",
+                "referenceIdentificationQualifier": "BM"
+              },
+              {
+                "referenceIdentification": "C9ZHTN",
+                "referenceIdentificationQualifier": "CN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "C9ZHTN",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "28167930"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "0905",
+            "groupControlNumber": "6840",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "098630254",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0905",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "098630254      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000006840",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 3263,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.LX_loop.0.businessInstructionsAndReferenceNumber.0",
+          "type": "REMOVE",
+          "value": "{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.LX_loop.0.businessInstructionsAndReferenceNumber",
+          "type": "REMOVE",
+          "value": "[{\"referenceIdentification\":\"\",\"referenceIdentificationQualifier\":\"\"}]"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:05:43.953Z",
+      "latestRevisionAt": "2022-10-02T16:05:43.982Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104919348/attachments"
+      }
+    },
+    {
+      "id": 104919287,
+      "from": {
+        "idType": "isaId",
+        "id": "ZIPL"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "RHQ937",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "1204",
+                        "timeCode": "ET",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Rayne",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "LA"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "21000",
+                    "ladingQuantity": "30",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1401 Tradeport Dr"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "ORLANDO",
+                    "postalCode": "32824",
+                    "countryCode": "USA",
+                    "stateOrProvinceCode": "FL"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Deliverr - MKO_MCO",
+                    "identificationCode": "7d40887f-d901-4880-85ad-d4a63817f349",
+                    "entityIdentifierCode": "CN",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "034330001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "12",
+                "transactionSetControlNumber": "034330001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "SW2558235",
+                "referenceIdentificationQualifier": "PO"
+              },
+              {
+                "referenceIdentification": "1",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "0455161",
+                "standardCarrierAlphaCode": "d262f035-d15d-4018-90ca-7cab3ebdb387",
+                "shipmentIdentificationNumber": "RHQ937"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "1204",
+            "groupControlNumber": "3433",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "ZIPL",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1204",
+            "interchangeSenderID": "ZIPL           ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000003433",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00400",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 2482,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:05:08.728Z",
+      "latestRevisionAt": "2022-10-02T16:05:08.902Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104919287/attachments"
+      }
+    },
+    {
+      "id": 104918945,
+      "from": {
+        "idType": "isaId",
+        "id": "FLOK"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "EKBU7M",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "N1_loop": [
+                  {
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2425 W Gwinnett, Savannah, GA 31415, US"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "Savannah",
+                        "postalCode": "31415",
+                        "stateOrProvinceCode": "GA"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "Savannah Distributing Company : Savannah Distributing - Atlanta"
+                      }
+                    ]
+                  }
+                ],
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20220930",
+                        "time": "1317",
+                        "timeCode": "UT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentAppointmentStatusCode": "AB",
+                        "shipmentStatusOrAppointmentReasonCode": "NS",
+                        "shipmentStatusOrAppointmentReasonCode1": "NA"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "--",
+                        "standardCarrierAlphaCode": "FLOK"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Fort Worth",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "TX"
+                      }
+                    ]
+                  }
+                ],
+                "OID_loop": [
+                  {
+                    "orderInformationDetail": [
+                      {
+                        "weight": "12560",
+                        "weightUnitCode": "L"
+                      }
+                    ]
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "002"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "2",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ],
+                "shipmentWeightPackagingAndQuantityData": [
+                  {
+                    "weight": "12560",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "weightQualifier": "G"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "contact": [
+                  {
+                    "name": "Ivette Ambrosio",
+                    "communicationNumber": "+16823243624"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "11900 S. Freeway, Fort Worth, TX 76052, US"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "Fort Worth",
+                    "postalCode": "76052",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "TX"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "SaddleCreek FortWorth",
+                    "identificationCode": "OLGA",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              },
+              {
+                "contact": [
+                  {
+                    "name": "Ryan Beighley",
+                    "communicationNumber": "+14045435396"
+                  }
+                ],
+                "partyLocation": [
+                  {
+                    "addressInformation": "2425 W Gwinnett, Savannah, GA 31415, US"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "Savannah",
+                    "postalCode": "31415",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "GA"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Savannah Distributing Company : Savannah Distributing - Atla",
+                    "identificationCode": "OLGA",
+                    "entityIdentifierCode": "CN",
+                    "identificationCodeQualifier": "94"
+                  }
+                ]
+              }
+            ],
+            "remarks": [
+              {
+                "freeFormInformation": "Flock Freight automated tracking update"
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "16",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "2",
+                "referenceIdentificationQualifier": "QN"
+              },
+              {
+                "referenceIdentification": "43205",
+                "referenceIdentificationQualifier": "PO"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "N6S-CYC5",
+                "standardCarrierAlphaCode": "6f9eb18d-d4de-42a0-ad08-21a7623a8aaf",
+                "shipmentIdentificationNumber": "EKBU7M"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "20221002",
+            "time": "0903",
+            "responsibleAgencyCode": "X",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "004010"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0903",
+            "interchangeSenderID": "FLOK",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00401",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 3667,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:03:42.276Z",
+      "latestRevisionAt": "2022-10-02T16:03:42.441Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104918945/attachments"
+      }
+    },
+    {
+      "id": 104918745,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "stream": "live",
+      "businessNumber": "28158164",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20221002",
+                        "time": "110247",
+                        "timeCode": "CT",
+                        "shipmentStatusIndicatorCode": "X6",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "2871",
+                        "equipmentDescriptionCode": "TL",
+                        "standardCarrierAlphaCode": "OLGA"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Beloit",
+                        "postalCode": "53511",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "WI",
+                        "latitudeDecimalFormat": "42.5083482",
+                        "longitudeDecimalFormat": "-89.03177649999999"
+                      }
+                    ]
+                  }
+                ],
+                "statusDetails": [
+                  {
+                    "date": "221002",
+                    "time": "0902",
+                    "cityName": "Beloit",
+                    "timeCode": "LT",
+                    "equipmentInitial": "TRUF",
+                    "shipmentStatusCode": "P",
+                    "stateOrProvinceCode": "21",
+                    "referenceIdentification": "28158164",
+                    "referenceIdentificationQualifier": "IA"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "specialHandlingInstructions": [
+                  {
+                    "specialHandlingCode": "MR"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "001",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1 Busch Pl"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser-Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "900 PROGRESS WAY"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "SUN PRAIRIE",
+                    "postalCode": "53590",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "WI"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "WSLR-- Wdi Llc",
+                    "identificationCode": "34854",
+                    "entityIdentifierCode": "ST",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "20",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028158164",
+                "referenceIdentificationQualifier": "CN"
+              },
+              {
+                "referenceIdentification": "28158164",
+                "referenceIdentificationQualifier": "CO"
+              },
+              {
+                "referenceIdentification": "SW2557863",
+                "referenceIdentificationQualifier": "BM"
+              },
+              {
+                "referenceIdentification": "7QQ4VU",
+                "referenceIdentificationQualifier": "CN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "7QQ4VU",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "28158164"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "0902",
+            "groupControlNumber": "6839",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "098630254",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0902",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "098630254      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000006839",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 3536,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:02:48.109Z",
+      "latestRevisionAt": "2022-10-02T16:02:48.132Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104918745/attachments"
+      }
+    },
+    {
+      "id": 104918744,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "stream": "live",
+      "businessNumber": "28158164",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "PENDING",
+      "validationStatus": "INVALID",
+      "acknowledgmentStatus": "NOT_ACKNOWLEDGED",
+      "status": "PENDING",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20220929",
+                        "time": "100000",
+                        "timeCode": "CT",
+                        "shipmentStatusIndicatorCode": "X3",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "2871",
+                        "equipmentDescriptionCode": "TL",
+                        "standardCarrierAlphaCode": "OLGA"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Beloit",
+                        "postalCode": "53511",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "WI",
+                        "latitudeDecimalFormat": "42.5083482",
+                        "longitudeDecimalFormat": "-89.03177649999999"
+                      }
+                    ]
+                  }
+                ],
+                "statusDetails": [
+                  {
+                    "date": "221002",
+                    "time": "0902",
+                    "cityName": "Beloit",
+                    "timeCode": "LT",
+                    "equipmentInitial": "TRUF",
+                    "stateOrProvinceCode": "21",
+                    "referenceIdentification": "28158164",
+                    "referenceIdentificationQualifier": "IA"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "specialHandlingInstructions": [
+                  {
+                    "specialHandlingCode": "MR"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "001",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "2351 BUSCH DR"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "FORT COLLINS",
+                    "postalCode": "80524",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "BRWY-- Fort Collins",
+                    "identificationCode": "FCL",
+                    "entityIdentifierCode": "SF",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1 Busch Pl"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser-Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "21",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028158164",
+                "referenceIdentificationQualifier": "CN"
+              },
+              {
+                "referenceIdentification": "28158164",
+                "referenceIdentificationQualifier": "CO"
+              },
+              {
+                "referenceIdentification": "SW2557863",
+                "referenceIdentificationQualifier": "BM"
+              },
+              {
+                "referenceIdentification": "7QQ4VU",
+                "referenceIdentificationQualifier": "CN"
+              },
+              {
+                "referenceIdentification": "1",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "7QQ4VU",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "28158164"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "0902",
+            "groupControlNumber": "6838",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "098630254",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0902",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "098630254      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000006838",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 3586,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:02:46.690Z",
+      "latestRevisionAt": "2022-10-02T16:02:46.720Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104918744/attachments"
+      }
+    },
+    {
+      "id": 104918701,
+      "from": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "stream": "live",
+      "businessNumber": "28158164",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "PENDING",
+      "validationStatus": "INVALID",
+      "acknowledgmentStatus": "NOT_ACKNOWLEDGED",
+      "status": "PENDING",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "AT7_loop": [
+                  {
+                    "shipmentStatusDetails": [
+                      {
+                        "date": "20220929",
+                        "time": "100000",
+                        "timeCode": "CT",
+                        "shipmentStatusIndicatorCode": "X3",
+                        "shipmentStatusOrAppointmentReasonCode": "NS"
+                      }
+                    ],
+                    "equipmentOrContainerOwnerAndType": [
+                      {
+                        "equipmentNumber": "2871",
+                        "equipmentDescriptionCode": "TL",
+                        "standardCarrierAlphaCode": "OLGA"
+                      }
+                    ],
+                    "equipmentShipmentOrRealPropertyLocation": [
+                      {
+                        "cityName": "Beloit",
+                        "postalCode": "53511",
+                        "countryCode": "US",
+                        "stateOrProvinceCode": "WI",
+                        "latitudeDecimalFormat": "42.5083482",
+                        "longitudeDecimalFormat": "-89.03177649999999"
+                      }
+                    ]
+                  }
+                ],
+                "statusDetails": [
+                  {
+                    "date": "221002",
+                    "time": "0902",
+                    "cityName": "Beloit",
+                    "timeCode": "LT",
+                    "equipmentInitial": "TRUF",
+                    "stateOrProvinceCode": "21",
+                    "referenceIdentification": "28158164",
+                    "referenceIdentificationQualifier": "IA"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "specialHandlingInstructions": [
+                  {
+                    "specialHandlingCode": "MR"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "001",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "2351 BUSCH DR"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "FORT COLLINS",
+                    "postalCode": "80524",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "CO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "BRWY-- Fort Collins",
+                    "identificationCode": "FCL",
+                    "entityIdentifierCode": "SF",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              },
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "1 Busch Pl"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser-Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "0001",
+                "transactionSetIdentifierCode": "214"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "21",
+                "transactionSetControlNumber": "0001"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028158164",
+                "referenceIdentificationQualifier": "CN"
+              },
+              {
+                "referenceIdentification": "28158164",
+                "referenceIdentificationQualifier": "CO"
+              },
+              {
+                "referenceIdentification": "SW2557863",
+                "referenceIdentificationQualifier": "BM"
+              },
+              {
+                "referenceIdentification": "7QQ4VU",
+                "referenceIdentificationQualifier": "CN"
+              },
+              {
+                "referenceIdentification": "1",
+                "referenceIdentificationQualifier": "QN"
+              }
+            ],
+            "beginningSegmentForTransportationCarrierShipmentStatusMessage": [
+              {
+                "referenceIdentification": "7QQ4VU",
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentIdentificationNumber": "28158164"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "0902",
+            "groupControlNumber": "6837",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "OLGA",
+            "applicationReceiversCode": "098630254",
+            "functionalIdentifierCode": "QM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "0902",
+            "interchangeSenderID": "OLGA           ",
+            "repetitionSeparator": "^",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "098630254      ",
+            "interchangeIDQualifier": "02",
+            "interchangeIDQualifier1": "01",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000006837",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "1",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 3586,
+      "structureChangelog": [],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:02:20.965Z",
+      "latestRevisionAt": "2022-10-02T16:02:20.993Z",
+      "type": {
+        "name": "214_TRANSPORTATION_CARRIER_SHIPMENT_STATUS_MESSAGE"
+      },
+      "links": {
+        "attachments": "/transactions/104918701/attachments"
+      }
+    },
+    {
+      "id": 104918638,
+      "from": {
+        "idType": "isaId",
+        "id": "098630254"
+      },
+      "to": {
+        "idType": "isaId",
+        "id": "OLGA"
+      },
+      "stream": "live",
+      "businessNumber": "28181360",
+      "creatorParty": "SENDER",
+      "deliveryStatus": "DELIVERED",
+      "validationStatus": "VALID",
+      "acknowledgmentStatus": "ACCEPTED",
+      "status": "ACCEPTED",
+      "message": {
+        "transactionSets": [
+          {
+            "LX_loop": [
+              {
+                "remarks": [
+                  {
+                    "freeFormInformation": "Memo ABI Managed   Anheuser-Bu",
+                    "freeFormInformation1": "sch managed delivery appointme"
+                  }
+                ],
+                "transactionSetLineNumber": [
+                  {
+                    "assignedNumber": "1"
+                  }
+                ],
+                "extendedReferenceInformation": [
+                  {
+                    "referenceIdentification": "02",
+                    "referenceIdentificationQualifier": "QN"
+                  }
+                ]
+              }
+            ],
+            "N1_loop": [
+              {
+                "partyLocation": [
+                  {
+                    "addressInformation": "814 S 2nd ST"
+                  }
+                ],
+                "geographicLocation": [
+                  {
+                    "cityName": "St. Louis",
+                    "postalCode": "63118",
+                    "countryCode": "US",
+                    "stateOrProvinceCode": "MO"
+                  }
+                ],
+                "partyIdentification": [
+                  {
+                    "name": "Anheuser Busch",
+                    "identificationCode": "b16fb52c-93c0-499d-af54-7c8633e06698",
+                    "entityIdentifierCode": "SH",
+                    "identificationCodeQualifier": "ZZ"
+                  }
+                ]
+              }
+            ],
+            "N7_loop": [
+              {
+                "equipmentDetails": [
+                  {
+                    "equipmentNumber": "unknown",
+                    "equipmentDescriptionCode": "TL"
+                  }
+                ]
+              }
+            ],
+            "S5_loop": [
+              {
+                "N1_loop": [
+                  {
+                    "contact": [
+                      {
+                        "name": "BRWY-- St. Louis",
+                        "communicationNumber": "314-577-0577",
+                        "contactFunctionCode": "AA",
+                        "communicationNumberQualifier": "TE"
+                      }
+                    ],
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2814 S SECOND ST"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "ST LOUIS",
+                        "postalCode": "63118",
+                        "stateOrProvinceCode": "MO"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "BRWY-- St. Louis",
+                        "identificationCode": "STL",
+                        "entityIdentifierCode": "SF",
+                        "identificationCodeQualifier": "92"
+                      }
+                    ]
+                  }
+                ],
+                "dateTime": [
+                  {
+                    "date": "20221005",
+                    "time": "0600",
+                    "timeCode": "LT",
+                    "dateQualifier": "69",
+                    "timeQualifier": "U"
+                  }
+                ],
+                "ladingDetail": [
+                  {
+                    "unitWeight": "43120",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "productServiceID": "28181360",
+                    "packagingFormCode": "PLT",
+                    "productServiceIDQualifier": "ON"
+                  },
+                  {
+                    "ladingQuantity": "1",
+                    "productServiceID": "28181360",
+                    "packagingFormCode": "PLT",
+                    "productServiceID2": "BEER",
+                    "productServiceIDQualifier": "ON",
+                    "productServiceIDQualifier2": "TP"
+                  }
+                ],
+                "stopOffDetails": [
+                  {
+                    "stopReasonCode": "LD",
+                    "stopSequenceNumber": "1"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "01",
+                    "referenceIdentificationQualifier": "QN"
+                  },
+                  {
+                    "referenceIdentification": "28181360",
+                    "referenceIdentificationQualifier": "CO"
+                  }
+                ]
+              },
+              {
+                "N1_loop": [
+                  {
+                    "contact": [
+                      {
+                        "name": "WSLR-- Tristar Beverage Llc",
+                        "communicationNumber": "931-552-3300",
+                        "contactFunctionCode": "AA",
+                        "communicationNumberQualifier": "TE"
+                      }
+                    ],
+                    "partyLocation": [
+                      {
+                        "addressInformation": "2059 WILMA RUDOLPH BLVD"
+                      }
+                    ],
+                    "geographicLocation": [
+                      {
+                        "cityName": "CLARKSVILLE",
+                        "postalCode": "37040",
+                        "stateOrProvinceCode": "TN"
+                      }
+                    ],
+                    "partyIdentification": [
+                      {
+                        "name": "WSLR-- Tristar Beverage Llc",
+                        "identificationCode": "04109",
+                        "entityIdentifierCode": "ST",
+                        "identificationCodeQualifier": "92"
+                      }
+                    ]
+                  }
+                ],
+                "dateTime": [
+                  {
+                    "date": "20221005",
+                    "time": "1100",
+                    "timeCode": "LT",
+                    "dateQualifier": "68",
+                    "timeQualifier": "Z"
+                  }
+                ],
+                "ladingDetail": [
+                  {
+                    "unitWeight": "43120",
+                    "ladingQuantity": "1",
+                    "weightUnitCode": "L",
+                    "productServiceID": "28181360",
+                    "packagingFormCode": "PLT",
+                    "productServiceIDQualifier": "ON"
+                  },
+                  {
+                    "ladingQuantity": "1",
+                    "productServiceID": "28181360",
+                    "packagingFormCode": "PLT",
+                    "productServiceID2": "BEER",
+                    "productServiceIDQualifier": "ON",
+                    "productServiceIDQualifier2": "TP"
+                  }
+                ],
+                "stopOffDetails": [
+                  {
+                    "stopReasonCode": "UL",
+                    "stopSequenceNumber": "2"
+                  }
+                ],
+                "businessInstructionsAndReferenceNumber": [
+                  {
+                    "referenceIdentification": "02",
+                    "referenceIdentificationQualifier": "QN"
+                  },
+                  {
+                    "referenceIdentification": "28181360",
+                    "referenceIdentificationQualifier": "CO"
+                  }
+                ]
+              }
+            ],
+            "setPurpose": [
+              {
+                "applicationTypeCode": "LT",
+                "transactionSetPurposeCode": "00"
+              }
+            ],
+            "routeInformation": [
+              {
+                "routingSequenceCode": "B",
+                "standardCarrierAlphaCode": "OLGA",
+                "transportationMethodTypeCode": "J"
+              }
+            ],
+            "transactionSetHeader": [
+              {
+                "transactionSetControlNumber": "021102238",
+                "transactionSetIdentifierCode": "204"
+              }
+            ],
+            "totalWeightAndCharges": [
+              {
+                "weight": "43120",
+                "ladingQuantity": "2156",
+                "weightUnitCode": "L",
+                "weightQualifier": "E"
+              }
+            ],
+            "transactionSetTrailer": [
+              {
+                "numberOfIncludedSegments": "34",
+                "transactionSetControlNumber": "021102238"
+              }
+            ],
+            "businessInstructionsAndReferenceNumber": [
+              {
+                "referenceIdentification": "028181360",
+                "referenceIdentificationQualifier": "SI"
+              }
+            ],
+            "beginningSegmentForShipmentInformationTransaction": [
+              {
+                "standardCarrierAlphaCode": "OLGA",
+                "shipmentMethodOfPaymentCode": "DF",
+                "shipmentIdentificationNumber": "28181360"
+              }
+            ]
+          }
+        ],
+        "functionalGroupHeader": [
+          {
+            "date": "221002",
+            "time": "1102",
+            "groupControlNumber": "3453",
+            "responsibleAgencyCode": "X",
+            "applicationSendersCode": "098630254",
+            "applicationReceiversCode": "OLGA",
+            "functionalIdentifierCode": "SM",
+            "versionReleaseIndustryIdentifierCode": "003040"
+          }
+        ],
+        "interchangeControlHeader": [
+          {
+            "interchangeDate": "221002",
+            "interchangeTime": "1102",
+            "interchangeSenderID": "098630254      ",
+            "securityInformation": "          ",
+            "interchangeReceiverID": "OLGA           ",
+            "interchangeIDQualifier": "01",
+            "interchangeIDQualifier1": "02",
+            "authorizationInformation": "          ",
+            "interchangeControlNumber": "000003392",
+            "componentElementSeparator": ">",
+            "acknowledgmentRequestedCode": "0",
+            "securityInformationQualifier": "00",
+            "interchangeUsageIndicatorCode": "P",
+            "authorizationInformationQualifier": "00",
+            "interchangeControlVersionNumberCode": "00304",
+            "interchangeControlStandardsIdentifier": "U"
+          }
+        ]
+      },
+      "messageSizeInBytes": 5126,
+      "structureChangelog": [
+        {
+          "path": "transactionSets.0.dateTime.0",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.1",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.2",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime.3",
+          "type": "REMOVE",
+          "value": "{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}"
+        },
+        {
+          "path": "transactionSets.0.dateTime",
+          "type": "REMOVE",
+          "value": "[{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"},{\"date\":\"\",\"time\":\"\",\"timeCode\":\"\",\"dateQualifier\":\"\",\"timeQualifier\":\"\"}]"
+        }
+      ],
+      "ruleErrors": [],
+      "createdAt": "2022-10-02T16:02:01.694Z",
+      "latestRevisionAt": "2022-10-02T16:02:02.019Z",
+      "type": {
+        "name": "204_MOTOR_CARRIER_LOAD_TENDER"
+      },
+      "links": {
+        "attachments": "/transactions/104918638/attachments"
+      }
+    }
+  ]
+}
