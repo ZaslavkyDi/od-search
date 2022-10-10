@@ -5,7 +5,7 @@ from pydantic import BaseSettings, Field
 
 class OrderfulSettings(BaseSettings):
     api_key: str = Field(
-        "xiwXH8EvftagxyyDLEeDA9b0E3gfiMsq5e88f8lR",
+        example="dasfTfasfIhfasfnkndAsdsdaFASfafsfa",
         description="API Key for interacting with an Orderful platform."
     )
     transaction_url: str = Field(
