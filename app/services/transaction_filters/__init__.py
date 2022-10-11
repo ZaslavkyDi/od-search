@@ -37,4 +37,4 @@ def get_all_transactions_filters() -> dict[TransactionFilterName, BaseTransactio
 
 
 def get_transaction_filter_by_name(name: TransactionFilterName) -> BaseTransactionFilter:
-    return get_all_transactions_filters[name]
+    return get_all_transactions_filters()[name]

@@ -13,6 +13,7 @@ def transactions_response() -> dict[str, Any]:
         .parent
         .parent
         .parent
+        .parent
         .joinpath(resource_part)
     )
     with open(parent_path, "r") as file:
