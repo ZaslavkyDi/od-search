@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-from config.settings import OrderfulSettings
+from app.config.settings import OrderfulSettings
 
 
 @lru_cache

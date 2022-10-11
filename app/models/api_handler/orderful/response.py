@@ -2,7 +2,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from models.pagination import PaginationQueryFilter
+from app.models.pagination import PaginationQueryFilter
 
 
 class TransactionsResponseQuery(BaseModel):

@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from constants import TransactionTypeId, TransactionDirection
+from app.config.constants import TransactionTypeId, TransactionDirection
 
 
 class TransactionQueryFilter(BaseModel):
