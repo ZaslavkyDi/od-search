@@ -9,3 +9,9 @@ start:
 
 pytest-cover:
 	poetry run pytest --cov=app tests/
+
+ruff:
+	ruff . --fix
+
+black:
+	black .
