@@ -3,10 +3,10 @@ from typing import Any
 import requests
 from requests import Response
 
-from app.config import get_orderful_settings
-from app.models.api_handler.orderful.request import TransactionQueryFilter
-from app.models.api_handler.orderful.response import TransactionsResponse
-from app.models.pagination import PaginationQueryFilter
+from od_search.config import get_orderful_settings
+from od_search.models.api_handler.orderful.request import TransactionQueryFilter
+from od_search.models.api_handler.orderful.response import TransactionsResponse
+from od_search.models.pagination import PaginationQueryFilter
 
 
 class OrderfulApiHandler:

@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from app.models.api_handler.orderful.request import TransactionQueryFilter
+from od_search.models.api_handler.orderful.request import TransactionQueryFilter
 
 
 class OrderfulTransactionTask(BaseModel):

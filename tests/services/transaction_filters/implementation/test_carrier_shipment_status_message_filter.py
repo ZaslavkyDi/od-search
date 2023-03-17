@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from app.services.transaction_filters.implementation.carrier_shipment_status_message_filter import (
+from od_search.services.transaction_filters.implementation.carrier_shipment_status_message_filter import (
     BeginningSegmentForTransportationCarrierShipmentStatusMessageTransactionFilter,
 )
 from tests.services.transaction_filters.utils import get_transaction_transaction_sets

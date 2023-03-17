@@ -4,7 +4,7 @@ from typing import Any
 
 import jsonpath_ng as jpath
 
-from app.config.constants import TransactionFilterName
+from od_search.config.constants import TransactionFilterName
 
 
 class BaseTransactionFilter(ABC):

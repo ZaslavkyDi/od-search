@@ -1,7 +1,7 @@
 import pytest
 
-from app.config.constants import TransactionFilterName
-from app.services.transaction_filters import (
+from od_search.config.constants import TransactionFilterName
+from od_search.services.transaction_filters import (
     get_all_transactions_filters,
     get_transaction_filter_by_name,
 )

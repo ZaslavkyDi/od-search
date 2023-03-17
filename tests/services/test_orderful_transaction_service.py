@@ -1,8 +1,8 @@
 import pytest
 
-from app.config import get_orderful_settings
-from app.models.pagination import PaginationQueryFilter
-from app.services.orderful_transaction_service import OrderfulTransactionService
+from od_search.config import get_orderful_settings
+from od_search.models.pagination import PaginationQueryFilter
+from od_search.services.orderful_transaction_service import OrderfulTransactionService
 
 
 @pytest.mark.parametrize(

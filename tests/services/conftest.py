@@ -1,7 +1,7 @@
 import pytest
 
-from app.services.api_handlers.orderful_api_handler import OrderfulApiHandler
-from app.services.orderful_transaction_service import OrderfulTransactionService
+from od_search.services.api_handlers.orderful_api_handler import OrderfulApiHandler
+from od_search.services.orderful_transaction_service import OrderfulTransactionService
 
 
 @pytest.fixture
