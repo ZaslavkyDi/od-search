@@ -1,3 +1,5 @@
+from typing import Any
+
 import requests
 from requests import Response
 
@@ -18,7 +20,7 @@ class OrderfulApiHandler:
             query_filter: TransactionQueryFilter | None = None,
             next_page_url: str | None = None,
     ) -> TransactionsResponse:
-        params = {}
+        params: dict[str, Any] = {}
         url: str = self._orderful_settings.transaction_url
 
         if next_page_url:

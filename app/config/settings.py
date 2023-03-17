@@ -4,7 +4,13 @@ from pydantic import BaseSettings, Field
 
 
 class OrderfulSettings(BaseSettings):
+    default_number_transaction_per_page: int = Field(
+        100,
+        exmple=100,
+        description="How many transaction Orderful return in as a response."
+    )
     api_key: str = Field(
+        "set-up-your-api-key",
         example="dasfTfasfIhfasfnkndAsdsdaFASfafsfa",
         description="API Key for interacting with an Orderful platform."
     )
