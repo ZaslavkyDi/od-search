@@ -30,11 +30,11 @@ target-version = ['py311']
 
 [tool.ruff]
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
-select = ["E", "F"]
-ignore = []
+select = ["E", "F", "Q"]
+ignore = ["E501"]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
-fixable = ["A", "B", "C", "D", "E", "F", "..."]
+fixable = ["A", "B", "C", "D", "E", "F"]
 unfixable = []
 
 # Exclude a variety of commonly ignored directories.
@@ -69,3 +69,6 @@ target-version = "py311"
 
 [tool.ruff.mccabe]
 max-complexity = 10
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"

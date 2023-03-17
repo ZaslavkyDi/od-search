@@ -10,15 +10,14 @@ from app.models.pagination import PaginationQueryFilter
 
 
 class OrderfulApiHandler:
-
     def __init__(self):
         self._orderful_settings = get_orderful_settings()
 
     def get_transactions(
-            self,
-            pagination: PaginationQueryFilter,
-            query_filter: TransactionQueryFilter | None = None,
-            next_page_url: str | None = None,
+        self,
+        pagination: PaginationQueryFilter,
+        query_filter: TransactionQueryFilter | None = None,
+        next_page_url: str | None = None,
     ) -> TransactionsResponse:
         params: dict[str, Any] = {}
         url: str = self._orderful_settings.transaction_url

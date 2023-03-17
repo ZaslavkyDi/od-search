@@ -1,7 +1,10 @@
 import pytest
 
 from app.config.constants import TransactionFilterName
-from app.services.transaction_filters import get_all_transactions_filters, get_transaction_filter_by_name
+from app.services.transaction_filters import (
+    get_all_transactions_filters,
+    get_transaction_filter_by_name,
+)
 
 
 def test_get_all_transactions_filters() -> None:
@@ -18,7 +21,7 @@ def test_get_all_transactions_filters() -> None:
     [
         TransactionFilterName.LX_LOOP_AT7_LOOP,
         TransactionFilterName.S5_LOOP,
-        TransactionFilterName.BUSINESS_REFERENCE_NUMBER
+        TransactionFilterName.BUSINESS_REFERENCE_NUMBER,
     ],
 )
 def test_get_transaction_filter_by_name(filter_name: TransactionFilterName) -> None:

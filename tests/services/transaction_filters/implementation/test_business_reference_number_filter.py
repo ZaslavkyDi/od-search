@@ -2,8 +2,9 @@ from typing import Any
 
 import pytest
 
-from app.services.transaction_filters.implementation.business_reference_number_filter import \
-    BusinessInstructionAndReferenceNumbersTransactionFilter
+from app.services.transaction_filters.implementation.business_reference_number_filter import (
+    BusinessInstructionAndReferenceNumbersTransactionFilter,
+)
 from tests.services.transaction_filters.utils import get_transaction_transaction_sets
 
 
@@ -13,8 +14,8 @@ def business_reference_number_filter() -> BusinessInstructionAndReferenceNumbers
 
 
 def test_business_reference_number_filter(
-        transactions_response: dict[str, Any],
-        business_reference_number_filter: BusinessInstructionAndReferenceNumbersTransactionFilter,
+    transactions_response: dict[str, Any],
+    business_reference_number_filter: BusinessInstructionAndReferenceNumbersTransactionFilter,
 ) -> None:
     actual_result: list[dict[str, Any]] = business_reference_number_filter.filter(
         transaction_data=transactions_response["data"],
@@ -23,7 +24,7 @@ def test_business_reference_number_filter(
 
     assert len(actual_result) == 1
     assert "SW2558238" == (
-        get_transaction_transaction_sets(transaction_data=actual_result[0])
-        ["businessInstructionsAndReferenceNumber"][0]
-        ["referenceIdentification"]
+        get_transaction_transaction_sets(transaction_data=actual_result[0])[
+            "businessInstructionsAndReferenceNumber"
+        ][0]["referenceIdentification"]
     )

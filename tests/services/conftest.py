@@ -10,5 +10,7 @@ def orderful_api_handler() -> OrderfulApiHandler:
 
 
 @pytest.fixture
-def orderful_transaction_service(orderful_api_handler: OrderfulApiHandler) -> OrderfulTransactionService:
+def orderful_transaction_service(
+    orderful_api_handler: OrderfulApiHandler,
+) -> OrderfulTransactionService:
     yield OrderfulTransactionService(api_handler=orderful_api_handler)

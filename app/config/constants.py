@@ -19,7 +19,9 @@ class TransactionFilterName(Enum):
     N1_LOOP = "n1_loop"
     N7_LOOP = "n7_loop"
     BUSINESS_REFERENCE_NUMBER = "business_instruction_and_reference_numbers"
-    CARRIER_SHIPMENT_STATUS_MESSAGE = "beginning_segment_for_transportation_carrier_shipment_status_message"
+    CARRIER_SHIPMENT_STATUS_MESSAGE = (
+        "beginning_segment_for_transportation_carrier_shipment_status_message"
+    )
     LX_LOOP = "lx_loop"
     LX_LOOP_AT7_LOOP = "lx_loop.at7_loop"
     S5_LOOP = "s5_loop"

@@ -8,7 +8,6 @@ from app.config.constants import TransactionFilterName
 
 
 class BaseTransactionFilter(ABC):
-
     def __init__(self, filter_name: TransactionFilterName, jpath_query: str) -> None:
         if not filter_name:
             raise ValueError("Param 'filter_name' has to be populated!")
@@ -23,7 +22,9 @@ class BaseTransactionFilter(ABC):
     def filter_name(self) -> TransactionFilterName:
         return self._filter_name
 
-    def filter(self, transaction_data: list[dict[str, Any]], searched_text: str) -> list[dict[str, Any]]:
+    def filter(
+        self, transaction_data: list[dict[str, Any]], searched_text: str
+    ) -> list[dict[str, Any]]:
         """
         Filtering given transaction data by specific searched text in specific transaction segment.
 

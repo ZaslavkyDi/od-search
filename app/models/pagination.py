@@ -13,21 +13,11 @@ class PaginationLink(BaseModel):
 
 
 class PaginationQueryFilter(BaseModel):
-    offset: int = Field(
-        default=0,
-        description="Items skipping value."
-    )
-    limit: int = Field(
-        default=100,
-        description="Max items per page."
-    )
-    total: int = Field(
-        default=0,
-        description="Total items."
-    )
+    offset: int = Field(default=0, description="Items skipping value.")
+    limit: int = Field(default=100, description="Max items per page.")
+    total: int = Field(default=0, description="Total items.")
     links: PaginationLink | None = Field(
-        default=None,
-        description="Links to the next and prev page if exists."
+        default=None, description="Links to the next and prev page if exists."
     )
 
     def to_request_query_format(self) -> dict[str, int]:
@@ -35,6 +25,3 @@ class PaginationQueryFilter(BaseModel):
             "offset": self.offset,
             "limit": self.limit,
         }
-
-
-

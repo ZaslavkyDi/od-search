@@ -12,8 +12,8 @@ def n7_loop_filter() -> N7LoopTransactionFilter:
 
 
 def test_n7_loop_filter(
-        transactions_response: dict[str, Any],
-        n7_loop_filter: N7LoopTransactionFilter,
+    transactions_response: dict[str, Any],
+    n7_loop_filter: N7LoopTransactionFilter,
 ) -> None:
     actual_result: list[dict[str, Any]] = n7_loop_filter.filter(
         transaction_data=transactions_response["data"],
@@ -22,8 +22,7 @@ def test_n7_loop_filter(
 
     assert len(actual_result) == 3
     assert "unknown" == (
-        get_transaction_transaction_sets(transaction_data=actual_result[0])
-        ["N7_loop"][0]
-        ["equipmentDetails"][0]
-        ["equipmentNumber"]
+        get_transaction_transaction_sets(transaction_data=actual_result[0])["N7_loop"][0][
+            "equipmentDetails"
+        ][0]["equipmentNumber"]
     )

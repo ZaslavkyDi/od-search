@@ -11,8 +11,8 @@ def receiver_filter() -> ToTransactionFilter:
 
 
 def test_receiver_filter(
-        transactions_response: dict[str, Any],
-        receiver_filter: ToTransactionFilter,
+    transactions_response: dict[str, Any],
+    receiver_filter: ToTransactionFilter,
 ) -> None:
     actual_result: list[dict[str, Any]] = receiver_filter.filter(
         transaction_data=transactions_response["data"],

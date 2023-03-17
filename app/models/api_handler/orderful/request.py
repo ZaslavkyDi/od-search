@@ -26,6 +26,4 @@ class TransactionQueryFilter(BaseModel):
 
     def to_request_not_none_query_format(self) -> dict[str, str | int]:
         query_data = self.to_request_query_format()
-        return {
-            k: v for k, v in query_data.items() if v is not None
-        }
+        return {k: v for k, v in query_data.items() if v is not None}
