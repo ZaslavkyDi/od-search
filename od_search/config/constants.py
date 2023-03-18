@@ -6,14 +6,21 @@ class TransactionDirection(Enum):
     IN = "in"
 
 
-class TransactionTypeId(Enum):
+class TransactionTypeIdOrderfulFormat(Enum):
     TYPE_204_ID = 18
     TYPE_210_ID = 19
     TYPE_214_ID = 20
     TYPE_990_ID = 34
 
 
-class TransactionFilterName(Enum):
+class TransactionTypeIdCliFormat(Enum):
+    TYPE_204_ID = "204"
+    TYPE_210_ID = "210"
+    TYPE_214_ID = "214"
+    TYPE_990_ID = "990"
+
+
+class TransactionFilterNameOrderfulFormat(Enum):
     TO = "to"
     FROM = "from"
     N1_LOOP = "n1_loop"

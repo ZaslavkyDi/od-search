@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from od_search.config.constants import TransactionTypeId, TransactionDirection
+from od_search.config.constants import TransactionTypeIdOrderfulFormat, TransactionDirection
 
 
 class TransactionQueryFilter(BaseModel):
@@ -8,7 +8,7 @@ class TransactionQueryFilter(BaseModel):
         default=None,
         description="Orderful transaction business number.",
     )
-    transaction_type: TransactionTypeId | None = Field(
+    transaction_type: TransactionTypeIdOrderfulFormat | None = Field(
         default=None,
         description="Orderful transaction type id 18/19/20/34.",
     )

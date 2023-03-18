@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-from od_search.config.constants import TransactionFilterName
+from od_search.config.constants import TransactionFilterNameOrderfulFormat
 from od_search.services.transaction_filters.base_filter import BaseTransactionFilter
 from od_search.services.transaction_filters.implementation.business_reference_number_filter import (
     BusinessInstructionAndReferenceNumbersTransactionFilter,
@@ -34,21 +34,25 @@ from od_search.services.transaction_filters.implementation.to_filter import ToTr
 
 
 @lru_cache
-def get_all_transactions_filters() -> dict[TransactionFilterName, BaseTransactionFilter]:
+def get_all_transactions_filters() -> (
+    dict[TransactionFilterNameOrderfulFormat, BaseTransactionFilter]
+):
     return {
-        TransactionFilterName.TO: ToTransactionFilter(),
-        TransactionFilterName.FROM: FromTransactionFilter(),
-        TransactionFilterName.N1_LOOP: N1LoopTransactionFilter(),
-        TransactionFilterName.N7_LOOP: N7LoopTransactionFilter(),
-        TransactionFilterName.BUSINESS_REFERENCE_NUMBER: BusinessInstructionAndReferenceNumbersTransactionFilter(),
-        TransactionFilterName.CARRIER_SHIPMENT_STATUS_MESSAGE: BeginningSegmentForTransportationCarrierShipmentStatusMessageTransactionFilter(),
-        TransactionFilterName.LX_LOOP: LxLoopTransactionFilter(),
-        TransactionFilterName.LX_LOOP_AT7_LOOP: LxLoopAt7LoopTransactionFilter(),
-        TransactionFilterName.S5_LOOP: S5LoopTransactionFilter(),
-        TransactionFilterName.S5_LOOP_N1_LOOP: S5LoopN1LoopTransactionFilter(),
-        TransactionFilterName.S5_LOOP_BUSINESS_REFERENCE_NUMBER: S5LoopBusinessInstructionAndReferenceNumbersTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.TO: ToTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.FROM: FromTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.N1_LOOP: N1LoopTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.N7_LOOP: N7LoopTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.BUSINESS_REFERENCE_NUMBER: BusinessInstructionAndReferenceNumbersTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.CARRIER_SHIPMENT_STATUS_MESSAGE: BeginningSegmentForTransportationCarrierShipmentStatusMessageTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.LX_LOOP: LxLoopTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.LX_LOOP_AT7_LOOP: LxLoopAt7LoopTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.S5_LOOP: S5LoopTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.S5_LOOP_N1_LOOP: S5LoopN1LoopTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.S5_LOOP_BUSINESS_REFERENCE_NUMBER: S5LoopBusinessInstructionAndReferenceNumbersTransactionFilter(),
     }
 
 
-def get_transaction_filter_by_name(name: TransactionFilterName) -> BaseTransactionFilter:
+def get_transaction_filter_by_name(
+    name: TransactionFilterNameOrderfulFormat,
+) -> BaseTransactionFilter:
     return get_all_transactions_filters()[name]

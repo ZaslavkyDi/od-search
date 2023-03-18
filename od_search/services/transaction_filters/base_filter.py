@@ -4,11 +4,11 @@ from typing import Any
 
 import jsonpath_ng as jpath
 
-from od_search.config.constants import TransactionFilterName
+from od_search.config.constants import TransactionFilterNameOrderfulFormat
 
 
 class BaseTransactionFilter(ABC):
-    def __init__(self, filter_name: TransactionFilterName, jpath_query: str) -> None:
+    def __init__(self, filter_name: TransactionFilterNameOrderfulFormat, jpath_query: str) -> None:
         if not filter_name:
             raise ValueError("Param 'filter_name' has to be populated!")
 
@@ -19,7 +19,7 @@ class BaseTransactionFilter(ABC):
         self._jsonpath_expr = jpath.parse(jpath_query)
 
     @property
-    def filter_name(self) -> TransactionFilterName:
+    def filter_name(self) -> TransactionFilterNameOrderfulFormat:
         return self._filter_name
 
     def filter(

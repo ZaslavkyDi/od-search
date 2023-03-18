@@ -2,7 +2,7 @@ import math
 from typing import Any
 
 from od_search.config import get_orderful_settings
-from od_search.config.constants import TransactionFilterName
+from od_search.config.constants import TransactionFilterNameOrderfulFormat
 from od_search.models.api_handler.orderful.response import TransactionsResponse
 from od_search.models.pagination import PaginationQueryFilter
 from od_search.models.service_tasks import OrderfulTransactionTask
@@ -19,7 +19,7 @@ class OrderfulTransactionService:
 
     def find_transactions_by_filter(
         self,
-        filter_name: TransactionFilterName,
+        filter_name: TransactionFilterNameOrderfulFormat,
         transaction_task: OrderfulTransactionTask,
     ) -> list[dict[str, Any]]:
         total_filtered_transactions: list[dict[str, Any]] = []
@@ -41,7 +41,7 @@ class OrderfulTransactionService:
 
     def _find_searched_transactions(
         self,
-        filter_name: TransactionFilterName,
+        filter_name: TransactionFilterNameOrderfulFormat,
         pagination_query: PaginationQueryFilter,
         transaction_task: OrderfulTransactionTask,
     ) -> list[dict[str, Any]]:
