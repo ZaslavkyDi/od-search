@@ -1,0 +1,10 @@
+version: '3.4'
+
+
+services:
+  od-search:
+    image: zaslavskyd/od-search:latest
+    environment:
+      ORDERFUL_API_KEY: 67a6a7aa-204d-4c93-83df-fbfe1b127baa
+    ports:
+      - "8880:8880"

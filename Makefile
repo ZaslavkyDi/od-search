@@ -11,7 +11,22 @@ pytest-cover:
 	poetry run pytest --cov=app tests/
 
 ruff:
-	ruff . --fix
+	poetry run ruff . --fix
 
 black:
-	black .
+	poetry run black .
+
+
+# Docker
+docker-build:
+	poetry run scripts/docker-build.sh $(tag)
+
+docker-publish:
+	poetry run scripts/docker-build.sh $(tag)
+	poetry run scripts/docker-publish.sh $(tag)
+	poetry run scripts/docker-clean.sh $(tag)
+
+docker-clean:
+	poetry run scripts/docker-clean.sh $(tag)
+
+docker-run:

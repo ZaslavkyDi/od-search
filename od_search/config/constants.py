@@ -13,7 +13,7 @@ class TransactionTypeIdOrderfulFormat(Enum):
     TYPE_990_ID = 34
 
 
-class TransactionTypeIdCliFormat(Enum):
+class TransactionType(Enum):
     TYPE_204_ID = "204"
     TYPE_210_ID = "210"
     TYPE_214_ID = "214"

@@ -1,6 +1,11 @@
 from pydantic import BaseModel, Field
 
-from od_search.config.constants import TransactionTypeIdOrderfulFormat, TransactionDirection
+from od_search.config.constants import (
+    TransactionTypeIdOrderfulFormat,
+    TransactionDirection,
+    TransactionType,
+)
+from od_search.utils import convert_transaction_type_to_orderful_query_format
 
 
 class TransactionQueryFilter(BaseModel):
@@ -8,7 +13,7 @@ class TransactionQueryFilter(BaseModel):
         default=None,
         description="Orderful transaction business number.",
     )
-    transaction_type: TransactionTypeIdOrderfulFormat | None = Field(
+    transaction_type: TransactionType | None = Field(
         default=None,
         description="Orderful transaction type id 18/19/20/34.",
     )
@@ -18,9 +23,15 @@ class TransactionQueryFilter(BaseModel):
     )
 
     def to_request_query_format(self) -> dict[str, str | int | None]:
+        orderful_transaction_type: TransactionTypeIdOrderfulFormat | None = None
+        if self.transaction_type:
+            orderful_transaction_type = convert_transaction_type_to_orderful_query_format(
+                self.transaction_type
+            )
+
         return {
             "businessNumber": self.business_number,
-            "transactionTypeId": self.transaction_type.value if self.transaction_type else None,
+            "transactionTypeId": orderful_transaction_type.value,
             "direction": self.direction.value if self.direction else None,
         }
 

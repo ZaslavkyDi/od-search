@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
@@ -15,3 +15,10 @@ class TransactionsResponse(BaseModel):
     query: TransactionsResponseQuery = Field(...)
     pagination: PaginationQueryFilter = Field(...)
     data: list[dict[str, Any]] = Field(...)
+
+
+class TransactionX12AttachmentResponse(BaseModel):
+    id: int = Field(...)
+    format: Literal["x12"] = Field("x12")
+    message: str = Field(...)
+    name: str = Field("Generated X12")
