@@ -1,12 +1,36 @@
-## How To Install
+## Table Of Content
+- [How To Install](#how-to-install)
+- [How To Run](#how-to-run)
+- [How to reach the API docs](#how-to-reach-the-api-docs)
 
-- Be sure that you are using Python 3.10 and higher.
-- Activate virtual environment with a commands:
+
+### How To Install
+
+- Be sure that you are using Python 3.11 or higher.
+- Activate virtual environment with commands:
     - <code> python3 -m venv venv </code>
     - <code> source venv/bin/activate </code>
+
 
 - Install poetry and project dependencies with a command:
     - <code> make install_poetry </code>
 
 
-## How To Run
+- Install pre-commit [Optional]:
+    - <code> make install_pre_commit </code>
+
+### How To Run
+- Run from _main.py_ file:
+  - <code> python od_search/main.py </code>
+
+
+- Run from _Makefile_ file:
+  - <code> make start </code>
+
+
+### How to reach the API docs
+By default the app is up on port <code>8880</code> to reach the API docs use one of the next links:
+
+- ReDoc: http://localhost:8880/redoc
+- Swagger: http://localhost:8880/docs
+- Openapi: http://localhost:8880/openapi.json
