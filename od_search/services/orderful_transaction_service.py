@@ -35,13 +35,18 @@ class OrderfulTransactionService:
     async def search(
         self,
         search_task: OrderfulTransactionTask,
+        include_x12: bool = False,
     ) -> OrderfulTransactionTaskResponse:
         total_filtered_transactions: list[dict[str, Any]] = []
+        first_transaction_page: int = self._calculate_first_transaction_page(
+            number_transactions_offset=search_task.transactions_offset,
+        )
         last_transaction_page: int = self._calculate_last_transaction_page_number(
-            number_checked_transactions=search_task.number_checked_transactions
+            number_checked_transactions=search_task.transactions_for_check,
+            number_transactions_offset=search_task.transactions_offset,
         )
 
-        for page in range(1, last_transaction_page + 1):
+        for page in range(first_transaction_page, last_transaction_page):
             pagination_query: PaginationQueryFilter = self._create_pagination_query(
                 page_number=page
             )
@@ -53,7 +58,7 @@ class OrderfulTransactionService:
             total_filtered_transactions.extend(filtered_transactions)
 
         multi_format_transactions_data: list[OrderfulTransactionTaskMultipleFormatItemResponse] = [
-            self._extend_transaction_with_x12_format_if_exists(i)
+            self._extend_transaction_with_x12_format_if_exists(i, include_x12)
             for i in total_filtered_transactions
         ]
 
@@ -83,18 +88,21 @@ class OrderfulTransactionService:
         return searched_transaction
 
     def _extend_transaction_with_x12_format_if_exists(
-        self, transaction_json_data: dict[str, Any]
+        self,
+        transaction_json_data: dict[str, Any],
+        include_x12: bool = False,
     ) -> OrderfulTransactionTaskMultipleFormatItemResponse:
         transaction_id: int = transaction_json_data["id"]
 
         x12_transaction_format: dict[str, Any] | None = None
-        try:
-            response_schema = self._api_handler.get_x12_transaction_format(
-                transaction_id=transaction_id
-            )
-            x12_transaction_format = json.loads(response_schema.json())
-        except ValueError as e:
-            logger.warning(str(e))
+        if include_x12:
+            try:
+                response_schema = self._api_handler.get_x12_transaction_format(
+                    transaction_id=transaction_id
+                )
+                x12_transaction_format = json.loads(response_schema.json())
+            except ValueError as e:
+                logger.warning(str(e))
 
         return OrderfulTransactionTaskMultipleFormatItemResponse(
             json_format=transaction_json_data,
@@ -102,16 +110,28 @@ class OrderfulTransactionService:
         )
 
     @staticmethod
-    def _calculate_last_transaction_page_number(number_checked_transactions: int) -> int:
+    def _calculate_first_transaction_page(number_transactions_offset: int) -> int:
+        page_number: float = (
+            number_transactions_offset / get_orderful_settings().default_number_transaction_per_page
+        )
+
+        if page_number < 1:
+            return 1
+
+        return math.ceil(page_number)
+
+    @staticmethod
+    def _calculate_last_transaction_page_number(
+        number_checked_transactions: int, number_transactions_offset: int = 0
+    ) -> int:
         if number_checked_transactions < 1:
             raise ValueError(
                 "The number of how many transaction need to check can not be less then 1."
             )
 
         page_number: float = (
-            number_checked_transactions
-            / get_orderful_settings().default_number_transaction_per_page
-        )
+            number_checked_transactions + number_transactions_offset
+        ) / get_orderful_settings().default_number_transaction_per_page
         return math.ceil(page_number)
 
     @staticmethod

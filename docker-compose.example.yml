@@ -6,5 +6,6 @@ services:
     image: zaslavskyd/od-search:latest
     environment:
       ORDERFUL_API_KEY: <KEY>
+      APP_HOST: "0.0.0.0"
     ports:
       - "8880:8880"

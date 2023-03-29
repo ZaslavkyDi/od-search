@@ -6,14 +6,7 @@
 - [Link To DockerHub Repository](#link-to-dockerhub-repository)
 
 
-### Overview
-
-This is a small Web App will save your time for filtering Orderful Dashboard transactions by their content and regular filter such as:
-
-- Direction
-- Transaction Type
-- Business Number
-- Transaction Content
+w
 
 
 ### How To Install

@@ -5,6 +5,10 @@ from pydantic import BaseSettings, Field
 
 class AppSettings(BaseSettings):
     version: str = "0.1.0"
+    host: str = "0.0.0.0"
+
+    class Config:
+        env_prefix = "app_"
 
 
 class OrderfulSettings(BaseSettings):
