@@ -1,26 +1,31 @@
 from enum import Enum
 
 
-class TransactionDirection(Enum):
+class TransactionFormat(str, Enum):
+    JSON = "json"
+    X12 = "x12"
+
+
+class TransactionDirection(str, Enum):
     OUT = "out"
     IN = "in"
 
 
-class TransactionTypeIdOrderfulFormat(Enum):
+class TransactionTypeIdOrderfulFormat(int, Enum):
     TYPE_204_ID = 18
     TYPE_210_ID = 19
     TYPE_214_ID = 20
     TYPE_990_ID = 34
 
 
-class TransactionType(Enum):
+class TransactionType(str, Enum):
     TYPE_204_ID = "204"
     TYPE_210_ID = "210"
     TYPE_214_ID = "214"
     TYPE_990_ID = "990"
 
 
-class TransactionFilterNameOrderfulFormat(Enum):
+class JsonTransactionFilterNameFormat(str, Enum):
     TO = "to"
     FROM = "from"
     N1_LOOP = "n1_loop"

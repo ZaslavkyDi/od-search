@@ -2,20 +2,22 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends
 
+from od_search.dependencies import get_search_service_by_transaction_format
 from od_search.models.requests import OrderfulTransactionTask
 from od_search.models.responses import OrderfulTransactionTaskEnums, OrderfulTransactionTaskResponse
-from od_search.services.orderful_transaction_service import OrderfulTransactionService
+from od_search.services.base_search_service import BaseSearchService
 
-router = APIRouter(prefix="/od-search", tags=["Orderful Dashboard Search"])
+router = APIRouter(prefix="/api/v1/od-search", tags=["Orderful Dashboard Search"])
 
 
-@router.post("")
+@router.post("/{transaction_format}")
 async def search(
     task: OrderfulTransactionTask,
-    transaction_service: Annotated[OrderfulTransactionService, Depends(OrderfulTransactionService)],
-    include_x12: bool = False,
+    transaction_service: Annotated[
+        BaseSearchService, Depends(get_search_service_by_transaction_format)
+    ],
 ) -> OrderfulTransactionTaskResponse:
-    return await transaction_service.search(search_task=task, include_x12=include_x12)
+    return await transaction_service.search(search_task=task)
 
 
 @router.get("/enums")

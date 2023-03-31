@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-from od_search.common.constants import TransactionFilterNameOrderfulFormat
+from od_search.common.constants import JsonTransactionFilterNameFormat
 from od_search.transaction_filters.base_filter import BaseTransactionFilter
 from od_search.transaction_filters.implementation.at5_loop_filter import (
     AT5LoopTransactionFilter,
@@ -37,26 +37,24 @@ from od_search.transaction_filters.implementation.to_filter import ToTransaction
 
 
 @lru_cache
-def get_all_transactions_filters() -> (
-    dict[TransactionFilterNameOrderfulFormat, BaseTransactionFilter]
-):
+def get_all_transactions_filters() -> dict[JsonTransactionFilterNameFormat, BaseTransactionFilter]:
     return {
-        TransactionFilterNameOrderfulFormat.TO: ToTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.FROM: FromTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.N1_LOOP: N1LoopTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.N7_LOOP: N7LoopTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.BUSINESS_REFERENCE_NUMBER: BusinessInstructionAndReferenceNumbersTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.CARRIER_SHIPMENT_STATUS_MESSAGE: BeginningSegmentForTransportationCarrierShipmentStatusMessageTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.LX_LOOP: LxLoopTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.LX_LOOP_AT7_LOOP: LxLoopAt7LoopTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.S5_LOOP: S5LoopTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.S5_LOOP_N1_LOOP: S5LoopN1LoopTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.S5_LOOP_BUSINESS_REFERENCE_NUMBER: S5LoopBusinessInstructionAndReferenceNumbersTransactionFilter(),
-        TransactionFilterNameOrderfulFormat.AT5_LOOP: AT5LoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.TO: ToTransactionFilter(),
+        JsonTransactionFilterNameFormat.FROM: FromTransactionFilter(),
+        JsonTransactionFilterNameFormat.N1_LOOP: N1LoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.N7_LOOP: N7LoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.BUSINESS_REFERENCE_NUMBER: BusinessInstructionAndReferenceNumbersTransactionFilter(),
+        JsonTransactionFilterNameFormat.CARRIER_SHIPMENT_STATUS_MESSAGE: BeginningSegmentForTransportationCarrierShipmentStatusMessageTransactionFilter(),
+        JsonTransactionFilterNameFormat.LX_LOOP: LxLoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.LX_LOOP_AT7_LOOP: LxLoopAt7LoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.S5_LOOP: S5LoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.S5_LOOP_N1_LOOP: S5LoopN1LoopTransactionFilter(),
+        JsonTransactionFilterNameFormat.S5_LOOP_BUSINESS_REFERENCE_NUMBER: S5LoopBusinessInstructionAndReferenceNumbersTransactionFilter(),
+        JsonTransactionFilterNameFormat.AT5_LOOP: AT5LoopTransactionFilter(),
     }
 
 
 def get_transaction_filter_by_name(
-    name: TransactionFilterNameOrderfulFormat,
+    name: JsonTransactionFilterNameFormat,
 ) -> BaseTransactionFilter:
     return get_all_transactions_filters()[name]

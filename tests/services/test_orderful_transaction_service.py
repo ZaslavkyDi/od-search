@@ -2,7 +2,7 @@ import pytest
 
 from od_search.config import get_orderful_settings
 from od_search.models.pagination import PaginationQueryFilter
-from od_search.services.orderful_transaction_service import OrderfulTransactionService
+from od_search.services.json_search_service import JsonSearchService
 
 
 @pytest.mark.parametrize(
@@ -15,7 +15,7 @@ from od_search.services.orderful_transaction_service import OrderfulTransactionS
 def test_calculate_last_transaction_page_number(
     expected: int,
     transactions_number: int,
-    orderful_transaction_service: OrderfulTransactionService,
+    orderful_transaction_service: JsonSearchService,
 ) -> None:
     actual: int = orderful_transaction_service._calculate_last_transaction_page_number(
         number_checked_transactions=transactions_number
@@ -26,7 +26,7 @@ def test_calculate_last_transaction_page_number(
 @pytest.mark.parametrize("invalid_transactions_number", [-1, 0])
 def test_raise_validation_error_on_invalid_input_data(
     invalid_transactions_number: int,
-    orderful_transaction_service: OrderfulTransactionService,
+    orderful_transaction_service: JsonSearchService,
 ) -> None:
     with pytest.raises(ValueError):
         orderful_transaction_service._calculate_last_transaction_page_number(
@@ -46,7 +46,7 @@ def test_create_pagination_query_minimal_data(
     incoming_page_number: int,
     expected_offset: int,
     expected_total: int,
-    orderful_transaction_service: OrderfulTransactionService,
+    orderful_transaction_service: JsonSearchService,
 ) -> None:
     expected = PaginationQueryFilter(
         offset=expected_offset,

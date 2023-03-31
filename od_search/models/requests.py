@@ -1,11 +1,11 @@
 from pydantic import BaseModel, Field
 
-from od_search.common.constants import TransactionFilterNameOrderfulFormat
+from od_search.common.constants import JsonTransactionFilterNameFormat
 from od_search.models.api_handler.orderful.request import TransactionQueryFilter
 
 
 class OrderfulTransactionTask(BaseModel):
-    searched_filter: TransactionFilterNameOrderfulFormat | None = Field(None)
+    searched_filter: JsonTransactionFilterNameFormat | None = Field(None)
     searched_text: str | None = Field(None)
     transactions_offset: int = Field(
         0, description="A number of skipping transactions on Orderful dashboard."

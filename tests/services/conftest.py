@@ -3,7 +3,7 @@ import pytest
 
 from od_search.common.httpx_connection import get_httpx_client, close_httpx_client
 from od_search.common.orderful_api_handler import OrderfulApiHandler
-from od_search.services.orderful_transaction_service import OrderfulTransactionService
+from od_search.services.json_search_service import JsonSearchService
 
 
 @pytest.fixture(scope="session")
@@ -21,5 +21,5 @@ def orderful_api_handler(httpx_client_fixture: httpx.AsyncClient) -> OrderfulApi
 @pytest.fixture
 def orderful_transaction_service(
     orderful_api_handler: OrderfulApiHandler,
-) -> OrderfulTransactionService:
-    yield OrderfulTransactionService(api_handler=orderful_api_handler)
+) -> JsonSearchService:
+    yield JsonSearchService(api_handler=orderful_api_handler)
