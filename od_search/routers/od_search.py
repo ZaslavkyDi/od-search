@@ -13,8 +13,9 @@ router = APIRouter(prefix="/od-search", tags=["Orderful Dashboard Search"])
 async def search(
     task: OrderfulTransactionTask,
     transaction_service: Annotated[OrderfulTransactionService, Depends(OrderfulTransactionService)],
+    include_x12: bool = False,
 ) -> OrderfulTransactionTaskResponse:
-    return await transaction_service.search(task)
+    return await transaction_service.search(search_task=task, include_x12=include_x12)
 
 
 @router.get("/enums")

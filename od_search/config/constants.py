@@ -24,6 +24,7 @@ class TransactionFilterNameOrderfulFormat(Enum):
     TO = "to"
     FROM = "from"
     N1_LOOP = "n1_loop"
+    AT5_LOOP = "at5_loop"
     N7_LOOP = "n7_loop"
     BUSINESS_REFERENCE_NUMBER = "business_instruction_and_reference_numbers"
     CARRIER_SHIPMENT_STATUS_MESSAGE = (

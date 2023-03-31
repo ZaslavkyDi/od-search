@@ -2,6 +2,9 @@ from functools import lru_cache
 
 from od_search.config.constants import TransactionFilterNameOrderfulFormat
 from od_search.services.transaction_filters.base_filter import BaseTransactionFilter
+from od_search.services.transaction_filters.implementation.at5_loop_filter import (
+    AT5LoopTransactionFilter,
+)
 from od_search.services.transaction_filters.implementation.business_reference_number_filter import (
     BusinessInstructionAndReferenceNumbersTransactionFilter,
 )
@@ -49,6 +52,7 @@ def get_all_transactions_filters() -> (
         TransactionFilterNameOrderfulFormat.S5_LOOP: S5LoopTransactionFilter(),
         TransactionFilterNameOrderfulFormat.S5_LOOP_N1_LOOP: S5LoopN1LoopTransactionFilter(),
         TransactionFilterNameOrderfulFormat.S5_LOOP_BUSINESS_REFERENCE_NUMBER: S5LoopBusinessInstructionAndReferenceNumbersTransactionFilter(),
+        TransactionFilterNameOrderfulFormat.AT5_LOOP: AT5LoopTransactionFilter(),
     }
 
 
