@@ -1,5 +1,5 @@
 from od_search.common.constants import TransactionFilterNameOrderfulFormat
-from od_search.services.transaction_filters.base_filter import BaseTransactionFilter
+from od_search.transaction_filters.base_filter import BaseTransactionFilter
 
 
 class FromTransactionFilter(BaseTransactionFilter):

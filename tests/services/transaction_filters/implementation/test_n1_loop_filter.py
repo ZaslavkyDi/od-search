@@ -2,10 +2,10 @@ from typing import Any
 
 import pytest
 
-from od_search.services.transaction_filters.implementation.lx_loop.lx_loop_filter import (
+from od_search.transaction_filters.implementation.lx_loop.lx_loop_filter import (
     LxLoopTransactionFilter,
 )
-from od_search.services.transaction_filters.implementation.n1_loop_filter import (
+from od_search.transaction_filters.implementation.n1_loop_filter import (
     N1LoopTransactionFilter,
 )
 from tests.services.transaction_filters.utils import get_transaction_transaction_sets

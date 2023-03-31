@@ -2,7 +2,7 @@ import httpx
 import pytest
 
 from od_search.common.httpx_connection import get_httpx_client, close_httpx_client
-from od_search.services.api_handlers.orderful_api_handler import OrderfulApiHandler
+from od_search.common.orderful_api_handler import OrderfulApiHandler
 from od_search.services.orderful_transaction_service import OrderfulTransactionService
 
 

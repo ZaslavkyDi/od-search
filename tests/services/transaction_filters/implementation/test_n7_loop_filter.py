@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from od_search.services.transaction_filters.implementation.n7_loop_filter import (
+from od_search.transaction_filters.implementation.n7_loop_filter import (
     N7LoopTransactionFilter,
 )
 from tests.services.transaction_filters.utils import get_transaction_transaction_sets

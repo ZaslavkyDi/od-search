@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from od_search.services.transaction_filters.implementation.s5_loop.s5_loop_business_reference_number_filter import (
+from od_search.transaction_filters.implementation import (
     S5LoopBusinessInstructionAndReferenceNumbersTransactionFilter,
 )
 from tests.services.transaction_filters.utils import get_transaction_transaction_sets

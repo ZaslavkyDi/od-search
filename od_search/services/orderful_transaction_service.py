@@ -15,8 +15,8 @@ from od_search.models.responses import (
     OrderfulTransactionTaskResponse,
     OrderfulTransactionTaskMultipleFormatItemResponse,
 )
-from od_search.services.api_handlers.orderful_api_handler import OrderfulApiHandler
-from od_search.services.transaction_filters import (
+from od_search.common.orderful_api_handler import OrderfulApiHandler
+from od_search.transaction_filters import (
     BaseTransactionFilter,
     get_transaction_filter_by_name,
 )

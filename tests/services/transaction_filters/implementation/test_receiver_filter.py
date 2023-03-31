@@ -2,7 +2,7 @@ from typing import Any
 
 import pytest
 
-from od_search.services.transaction_filters.implementation.to_filter import ToTransactionFilter
+from od_search.transaction_filters.implementation.to_filter import ToTransactionFilter
 
 
 @pytest.fixture
