@@ -2,7 +2,7 @@ from typing import Self, Any
 
 from pydantic import BaseModel
 
-from od_search.config.constants import (
+from od_search.common.constants import (
     TransactionFilterNameOrderfulFormat,
     TransactionType,
     TransactionDirection,

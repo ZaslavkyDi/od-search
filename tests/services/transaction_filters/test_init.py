@@ -1,6 +1,6 @@
 import pytest
 
-from od_search.config.constants import TransactionFilterNameOrderfulFormat
+from od_search.common.constants import TransactionFilterNameOrderfulFormat
 from od_search.services.transaction_filters import (
     get_all_transactions_filters,
     get_transaction_filter_by_name,

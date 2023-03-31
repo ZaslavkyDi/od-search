@@ -1,4 +1,4 @@
-from od_search.config.constants import TransactionFilterNameOrderfulFormat
+from od_search.common.constants import TransactionFilterNameOrderfulFormat
 from od_search.services.transaction_filters.base_filter import BaseTransactionFilter
 
 

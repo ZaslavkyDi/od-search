@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from od_search.config.constants import (
+from od_search.common.constants import (
     TransactionTypeIdOrderfulFormat,
     TransactionDirection,
     TransactionType,

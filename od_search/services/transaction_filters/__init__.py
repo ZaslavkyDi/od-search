@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-from od_search.config.constants import TransactionFilterNameOrderfulFormat
+from od_search.common.constants import TransactionFilterNameOrderfulFormat
 from od_search.services.transaction_filters.base_filter import BaseTransactionFilter
 from od_search.services.transaction_filters.implementation.at5_loop_filter import (
     AT5LoopTransactionFilter,

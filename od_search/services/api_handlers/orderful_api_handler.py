@@ -1,9 +1,10 @@
-from typing import Any
+from typing import Any, Annotated
 from urllib.parse import urljoin
 
-import requests
-from requests import Response
+from fastapi import Depends
+from httpx import AsyncClient, Response
 
+from od_search.common.httpx_connection import get_httpx_client
 from od_search.config import get_orderful_settings
 from od_search.models.api_handler.orderful.request import TransactionQueryFilter
 from od_search.models.api_handler.orderful.response import (
@@ -14,15 +15,20 @@ from od_search.models.pagination import PaginationQueryFilter
 
 
 class OrderfulApiHandler:
-    def __init__(self):
+    def __init__(self, httpx_client: Annotated[AsyncClient, Depends(get_httpx_client)]):
         self._orderful_settings = get_orderful_settings()
+        self._httpx_client = httpx_client
 
-    def get_transactions(
+    async def get_json_transactions(
         self,
         pagination: PaginationQueryFilter,
         query_filter: TransactionQueryFilter | None = None,
         next_page_url: str | None = None,
     ) -> TransactionsResponse:
+        """
+        Getting a list of available Orderful transaction by filter params and pagination data.
+        """
+
         params: dict[str, Any] = {}
         url: str = self._orderful_settings.transaction_url
 
@@ -34,7 +40,7 @@ class OrderfulApiHandler:
         else:
             params.update(pagination.to_request_query_format())
 
-        response: Response = requests.get(
+        response: Response = await self._httpx_client.get(
             url=url,
             headers=self._orderful_settings.orderful_auth_header,
             params=params,
@@ -43,11 +49,17 @@ class OrderfulApiHandler:
 
         return TransactionsResponse(**response.json())
 
-    def get_x12_transaction_format(self, transaction_id: int) -> TransactionX12AttachmentResponse:
+    async def get_x12_transaction(self, transaction_id: int) -> TransactionX12AttachmentResponse:
+        """
+        Execute request for getting X12 Orderful transaction format by its ID.
+
+        If X12 format is available for the transaction then pydantic model will be return.
+        If X12 format is available for the transaction then ValueError will be thrown.
+        """
         url: str = self._orderful_settings.transaction_url
 
         attachments_url: str = urljoin(url, f"{transaction_id}/attachments")
-        response: Response = requests.get(
+        response: Response = await self._httpx_client.get(
             url=attachments_url,
             headers=self._orderful_settings.orderful_auth_header,
         )

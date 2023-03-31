@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from od_search.config.constants import TransactionFilterNameOrderfulFormat
+from od_search.common.constants import TransactionFilterNameOrderfulFormat
 from od_search.models.api_handler.orderful.request import TransactionQueryFilter
 
 

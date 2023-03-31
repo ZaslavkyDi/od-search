@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-from od_search.config.constants import TransactionTypeIdOrderfulFormat, TransactionType
+from od_search.common.constants import TransactionTypeIdOrderfulFormat, TransactionType
 
 
 @lru_cache
