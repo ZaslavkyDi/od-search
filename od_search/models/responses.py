@@ -25,8 +25,8 @@ class OrderfulTransactionTaskEnums(BaseModel):
 
 
 class OrderfulTransactionTaskMultipleFormatItemResponse(BaseModel):
-    json_format: dict[str, Any]
-    x12_format: dict[str, Any] | None
+    json_format: dict[str, Any] | None = None
+    x12_format: dict[str, Any] | None = None
 
 
 class OrderfulTransactionTaskResponse(BaseModel):

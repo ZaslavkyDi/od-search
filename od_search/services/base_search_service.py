@@ -1,11 +1,12 @@
 import abc
 import logging
 import math
-from typing import Any, Annotated, Protocol
+from typing import Any, Annotated, Protocol, AsyncGenerator
 
 from fastapi import Depends
 
 from od_search.config import get_orderful_settings
+from od_search.models.api_handler.orderful.request import TransactionQueryFilter
 from od_search.models.api_handler.orderful.response import (
     TransactionsResponse,
 )
@@ -15,6 +16,7 @@ from od_search.models.responses import (
     OrderfulTransactionTaskResponse,
 )
 from od_search.common.orderful_api_handler import OrderfulApiHandler
+from od_search.models.search_service import TransactionPageRange
 from od_search.transaction_filters import (
     BaseTransactionFilter,
     get_transaction_filter_by_name,
@@ -34,6 +36,46 @@ class BaseSearchService(Protocol, metaclass=abc.ABCMeta):
     @abc.abstractmethod
     async def search(self, search_task: OrderfulTransactionTask) -> OrderfulTransactionTaskResponse:
         pass
+
+    async def _get_transactions_per_page_range(
+        self,
+        page_range: TransactionPageRange,
+        transaction_query_filter: TransactionQueryFilter | None,
+    ) -> AsyncGenerator[TransactionsResponse, None]:
+        """
+        Retrieves transactions for each page in the given page range.
+
+        Args:
+        page_range: The range of page numbers to retrieve transactions for.
+        transaction_query_filter: Filters to apply to the transaction query.
+
+        Yields:
+        TransactionsResponse: The transactions for a given page.
+        """
+        for page in range(page_range.start_page_number, page_range.end_page_number + 1):
+            pagination_query = self._create_pagination_query(page_number=page)
+            transactions_per_page: TransactionsResponse = (
+                await self._api_handler.get_json_transactions(
+                    pagination=pagination_query,
+                    query_filter=transaction_query_filter,
+                )
+            )
+            yield transactions_per_page
+
+    def _get_transactions_pages_range(
+        self, search_task: OrderfulTransactionTask
+    ) -> TransactionPageRange:
+        first_transaction_page: int = self._calculate_first_transaction_page(
+            number_transactions_offset=search_task.transactions_offset,
+        )
+        last_transaction_page: int = self._calculate_last_transaction_page_number(
+            number_checked_transactions=search_task.transactions_for_check,
+            number_transactions_offset=search_task.transactions_offset,
+        )
+        return TransactionPageRange(
+            start_page_number=first_transaction_page,
+            end_page_number=last_transaction_page,
+        )
 
     @staticmethod
     def _filter_transactions(
