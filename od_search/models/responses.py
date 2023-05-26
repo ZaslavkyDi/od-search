@@ -7,7 +7,7 @@ from od_search.common.constants import (
     TransactionType,
     TransactionDirection,
 )
-from od_search.models.requests import OrderfulTransactionTask
+from od_search.models.requests import JsonTransactionTask
 
 
 class OrderfulTransactionTaskEnums(BaseModel):
@@ -30,6 +30,6 @@ class OrderfulTransactionTaskMultipleFormatItemResponse(BaseModel):
 
 
 class OrderfulTransactionTaskResponse(BaseModel):
-    metadata: OrderfulTransactionTask
+    metadata: JsonTransactionTask
     total_items: int
     data: list[OrderfulTransactionTaskMultipleFormatItemResponse]

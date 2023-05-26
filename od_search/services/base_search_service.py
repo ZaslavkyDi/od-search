@@ -1,7 +1,7 @@
 import abc
 import logging
 import math
-from typing import Any, Annotated, Protocol, AsyncGenerator
+from typing import Any, Annotated, Protocol, AsyncGenerator, TypeVar
 
 from fastapi import Depends
 
@@ -11,19 +11,16 @@ from od_search.models.api_handler.orderful.response import (
     TransactionsResponse,
 )
 from od_search.models.pagination import PaginationQueryFilter
-from od_search.models.requests import OrderfulTransactionTask
+from od_search.models.requests import JsonTransactionTask, BaseTransactionTask
 from od_search.models.responses import (
     OrderfulTransactionTaskResponse,
 )
 from od_search.common.orderful_api_handler import OrderfulApiHandler
 from od_search.models.search_service import TransactionPageRange
-from od_search.transaction_filters import (
-    BaseTransactionFilter,
-    get_transaction_filter_by_name,
-)
 
 
 logger = logging.getLogger(__name__)
+TransactionTask = TypeVar("TransactionTask", bound=BaseTransactionTask)
 
 
 class BaseSearchService(Protocol, metaclass=abc.ABCMeta):
@@ -34,7 +31,7 @@ class BaseSearchService(Protocol, metaclass=abc.ABCMeta):
         self._api_handler = api_handler
 
     @abc.abstractmethod
-    async def search(self, search_task: OrderfulTransactionTask) -> OrderfulTransactionTaskResponse:
+    async def search(self, search_task: TransactionTask) -> OrderfulTransactionTaskResponse:
         pass
 
     async def _get_transactions_per_page_range(
@@ -63,7 +60,7 @@ class BaseSearchService(Protocol, metaclass=abc.ABCMeta):
             yield transactions_per_page
 
     def _get_transactions_pages_range(
-        self, search_task: OrderfulTransactionTask
+        self, search_task: JsonTransactionTask
     ) -> TransactionPageRange:
         first_transaction_page: int = self._calculate_first_transaction_page(
             number_transactions_offset=search_task.transactions_offset,
@@ -77,20 +74,13 @@ class BaseSearchService(Protocol, metaclass=abc.ABCMeta):
             end_page_number=last_transaction_page,
         )
 
-    @staticmethod
+    @abc.abstractmethod
     def _filter_transactions(
-        transactions_response: TransactionsResponse,
-        transaction_task: OrderfulTransactionTask,
+        self,
+        transactions: Any,
+        transaction_task: JsonTransactionTask,
     ) -> list[dict[str, Any]]:
-        transaction_filter: BaseTransactionFilter = get_transaction_filter_by_name(
-            name=transaction_task.searched_filter
-        )
-        searched_transaction = transaction_filter.filter(
-            transaction_data=transactions_response.data,
-            searched_text=transaction_task.searched_text,
-        )
-
-        return searched_transaction
+        pass
 
     @staticmethod
     def _calculate_first_transaction_page(number_transactions_offset: int) -> int:

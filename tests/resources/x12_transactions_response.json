@@ -1,0 +1,56 @@
+[
+   {
+      "id":173210425,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*1052*U*00401*000003662*0*P*>~GS*FA*OLGA*FZMK*20230404*1052*3662*X*004010~ST*997*0001~AK1*QM*1272339~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3662~IEA*1*000003662~",
+      "name":"997 Acknowledgement to Sender (1272339)"
+   },
+   {
+      "id":173160412,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*0904*U*00401*000003653*0*P*>~GS*FA*OLGA*FZMK*20230404*0904*3653*X*004010~ST*997*0001~AK1*QM*1271789~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3653~IEA*1*000003653~",
+      "name":"997 Acknowledgement to Sender (1271789)"
+   },
+   {
+      "id":173160171,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*0904*U*00401*000003651*0*P*>~GS*FA*OLGA*FZMK*20230404*0904*3651*X*004010~ST*997*0001~AK1*QM*1271790~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3651~IEA*1*000003651~",
+      "name":"997 Acknowledgement to Sender (1271790)"
+   },
+   {
+      "id":173136583,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*0813*U*00401*000003647*0*P*>~GS*FA*OLGA*FZMK*20230404*0813*3647*X*004010~ST*997*0001~AK1*QM*1271483~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3647~IEA*1*000003647~",
+      "name":"997 Acknowledgement to Sender (1271483)"
+   },
+   {
+      "id":173136610,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*0813*U*00401*000003648*0*P*>~GS*FA*OLGA*FZMK*20230404*0813*3648*X*004010~ST*997*0001~AK1*QM*1271484~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3648~IEA*1*000003648~",
+      "name":"997 Acknowledgement to Sender (1271484)"
+   },
+   {
+      "id":173073080,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*0554*U*00401*000003634*0*P*>~GS*FA*OLGA*FZMK*20230404*0554*3634*X*004010~ST*997*0001~AK1*QM*1270710~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3634~IEA*1*000003634~",
+      "name":"997 Acknowledgement to Sender (1270710)"
+   },
+   {
+      "id":173073081,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230404*0554*U*00401*000003635*0*P*>~GS*FA*OLGA*FZMK*20230404*0554*3635*X*004010~ST*997*0001~AK1*QM*1270711~AK2*214*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3635~IEA*1*000003635~",
+      "name":"997 Acknowledgement to Sender (1270711)"
+   },
+   {
+      "id":170532400,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*OLGA           *02*FZMK           *230328*1232*U*00401*000003434*0*P*>~GS*FA*OLGA*FZMK*20230328*1232*3434*X*004010~ST*997*0001~AK1*GF*1253613~AK2*990*0001~AK5*A~AK9*A*1*1*1~SE*6*0001~GE*1*3434~IEA*1*000003434~",
+      "name":"997 Acknowledgement to Sender (1253613)"
+   },
+   {
+      "id":170532370,
+      "format":"x12",
+      "message":"ISA*00*          *00*          *02*FZMK           *02*OLGA           *230328*1526*U*00401*001253603*0*P*>~GS*FA*FZMK*OLGA*20230328*1526*1253603*X*004010~ST*997*0001~AK1*SM*3431~AK9*A*1*1*1~SE*4*0001~GE*1*1253603~IEA*1*001253603~\r\n",
+      "name":"Functional Acknowledgement (997)"
+   }
+]

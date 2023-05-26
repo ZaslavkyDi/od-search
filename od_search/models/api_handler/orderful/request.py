@@ -31,7 +31,9 @@ class TransactionQueryFilter(BaseModel):
 
         return {
             "businessNumber": self.business_number,
-            "transactionTypeId": orderful_transaction_type.value,
+            "transactionTypeId": orderful_transaction_type.value
+            if orderful_transaction_type
+            else None,
             "direction": self.direction.value if self.direction else None,
         }
 
